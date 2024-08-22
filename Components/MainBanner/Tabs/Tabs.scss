@@ -1,0 +1,42 @@
+.tabsNav {
+    ul {
+        @apply flex items-center justify-start;
+        li {
+            button {
+                @apply text-[var(--text-color)]  bg-transparent  px-8 py-1 rounded-t-2xl transition-all text-[1.25rem];
+
+                &.active {
+                    @apply bg-[var(--white)] text-[var(--theme-color)];
+                }
+            }
+        }
+    }
+}
+
+.tabContent {
+    @apply bg-[var(--white)] pt-20 pb-8 px-8 shadow-lg rounded-2xl;
+
+    &.noLeft {
+        @apply rounded-tl-none;
+    }
+
+    .tab {
+        @apply flex items-center justify-between;
+        .content {
+            width: calc(100% - 450px);
+            flex: 0 1 calc(100% - 450px);
+            h2 {
+                @apply text-[2.5rem] text-[var(--theme-color)] font-semibold mb-8;
+            }
+            p {
+                @apply text-[0.875rem];
+            }
+        }
+        figure {
+            width: 450px;
+            flex: 0 1 450px;
+            background-color: var(--background);
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.mainBanner {
+  @apply relative py-28;
+  .content {
+    @apply container mx-auto;
+    h1 {
+      @apply text-[var(--theme-color)] text-[2.5rem] font-extrabold;
+    }
+
+    p {
+      @apply text-[var(--text-color)] text-[1.125rem] font-normal;
+    }
+  }
+}
