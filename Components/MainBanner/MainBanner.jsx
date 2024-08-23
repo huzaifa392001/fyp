@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import './mainBanner.scss'
+import './MainBanner.scss'
 import Tabs from './Tabs/Tabs';
 import Banner from './Banner/Banner';
 
