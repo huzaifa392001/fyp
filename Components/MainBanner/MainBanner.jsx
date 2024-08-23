@@ -2,11 +2,12 @@
 import React from 'react';
 import './mainBanner.scss'
 import Tabs from './Tabs/Tabs';
+import Banner from './Banner/Banner';
 
 function MainBanner() {
 
     return (
-        <>
+        <section className='py-0'>
             <div className="mainBanner">
                 <div className="content">
                     <h1>
@@ -21,7 +22,8 @@ function MainBanner() {
                 </div>
             </div>
             <Tabs />
-        </>
+            <Banner />
+        </section>
     );
 }
 

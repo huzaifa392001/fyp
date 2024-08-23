@@ -3,10 +3,10 @@
         @apply flex items-center justify-start;
         li {
             button {
-                @apply text-[var(--text-color)]  bg-transparent  px-8 py-1 rounded-t-2xl transition-all text-[1.25rem];
+                @apply text-[var(--text-color)]  bg-transparent  px-8 py-3 rounded-t-2xl transition-all text-[1.125rem] leading-none;
 
                 &.active {
-                    @apply bg-[var(--white)] text-[var(--theme-color)];
+                    @apply bg-[var(--white)] text-[var(--theme-color)] font-bold;
                 }
             }
         }
@@ -21,22 +21,35 @@
     }
 
     .tab {
-        @apply flex items-center justify-between;
+        @apply flex items-center justify-between md:flex-row flex-col;
         .content {
             width: calc(100% - 450px);
             flex: 0 1 calc(100% - 450px);
+
+            @include respond-to($breakpoint-md) {
+                width: 100%;
+                flex: 0 1 100%;
+            }
+
             h2 {
-                @apply text-[2.5rem] text-[var(--theme-color)] font-semibold mb-8;
+                @apply text-[2rem] text-[var(--theme-color)] font-semibold mb-8;
             }
             p {
-                @apply text-[0.875rem];
+                @apply text-[1rem] leading-loose;
             }
         }
         figure {
-            width: 450px;
             flex: 0 1 450px;
-            background-color: var(--background);
-            height: 100%;
+            @apply md:w-[450px] h-[350px] relative w-full;
+
+            @include respond-to($breakpoint-md) {
+                width: 100%;
+                flex: auto;
+            }
+
+            img {
+                object-fit: contain;
+            }
         }
     }
 }

@@ -1,0 +1,12 @@
+[
+    {
+        "img": "/images/img1.jpg",
+        "heading": "Safety",
+        "description": "We ensure your safety by partnering only with drivers who hold a valid driver's license and have undergone a thorough background check. Each delivery is tracked in real-time, and both your parcels and trips are fully insured, whether you’re a shipper or a passenger. With ParcelPro, you can have complete peace of mind."
+    },
+    {
+        "img": "/images/img2.jpg",
+        "heading": "Accessibility",
+        "description": "At ParcelPro, we make our services accessible to everyone. You don't need a smartphone or a credit card to use our app—our platform is designed to be inclusive, ensuring that no one is left out. Whether you're tech-savvy or not, ParcelPro is here for you."
+    }
+]

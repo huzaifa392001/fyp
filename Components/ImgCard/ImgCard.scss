@@ -1,0 +1,21 @@
+.imgCard {
+    @apply shadow-2xl overflow-hidden rounded-xl;
+    figure {
+        @apply relative w-full h-[250px] lg:h-[450px];
+        img {
+            object-fit: cover;
+        }
+    }
+    .content {
+        @apply px-4 py-8;
+        h3 {
+            @apply text-[1.75rem] font-bold mb-4;
+        }
+        p {
+            @apply text-[0.875rem] font-medium;
+        }
+        a {
+            @apply text-[var(--theme-color)] text-[1.125rem] font-bold block mt-2 flex items-center gap-2;
+        }
+    }
+}

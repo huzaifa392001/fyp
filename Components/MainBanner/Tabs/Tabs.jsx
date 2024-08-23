@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Tabs.scss'
+import Image from 'next/image';
 
 function Tabs() {
     const [activeTab, setActiveTab] = useState('b2b');
@@ -29,20 +30,28 @@ function Tabs() {
                             </p>
                         </div>
                         <figure>
-
+                            <Image
+                                src={'/images/delivery-3.png'}
+                                alt=''
+                                fill
+                            />
                         </figure>
                     </div>
                 )}
                 {activeTab === 'p2p' && (
                     <div className="tab" id="p2p">
                         <div class="content">
-                            <h2>Peer to Peer</h2>
+                            <h2>Person to Person</h2>
                             <p>
-                                Our Peer to Peer delivery service connects individuals for personal deliveries. Whether you're sending a gift to a friend, delivering a package to a family member, or coordinating a delivery with a neighbor, our service ensures your items are delivered quickly and safely.
+                                Our Person to Person delivery service connects individuals for personal deliveries. Whether you're sending a gift to a friend, delivering a package to a family member, or coordinating a delivery with a neighbor, our service ensures your items are delivered quickly and safely.
                             </p>
                         </div>
                         <figure>
-
+                            <Image
+                                src={'/images/delivery-3.png'}
+                                alt=''
+                                fill
+                            />
                         </figure>
                     </div>
                 )}
@@ -55,7 +64,11 @@ function Tabs() {
                             </p>
                         </div>
                         <figure>
-
+                            <Image
+                                src={'/images/delivery-3.png'}
+                                alt=''
+                                fill
+                            />
                         </figure>
                     </div>
                 )}

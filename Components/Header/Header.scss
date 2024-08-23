@@ -1,39 +1,60 @@
 header {
-    @apply py-6;
+    @apply pt-6 border-b-2 border-[var(--theme-color)];
     nav {
-        @apply container mx-auto flex items-center justify-between;
-        .navbar {
-            ul {
-                @apply flex items-center justify-between gap-6;
+        @apply container mx-auto flex items-center justify-between px-2 sm:px-0;
+        .toggleBtn {
+            @apply md:hidden border-2 border-[var(--text-color)] text-[var(--text-color)] w-[30px] h-[30px] rounded-md flex items-center justify-center;
+        }
+    }
+}
+.navbar {
+    ul {
+        @apply flex items-center md:justify-between gap-6 md:flex-row flex-col h-full justify-center;
 
-                li {
-                    a {
-                        @apply text-[1rem] font-medium relative transition-all ;
-                        &::before {
-                            content: "";
-                            @apply absolute bottom-0 left-0 w-full bg-[var(--theme-color)] h-[2px] transition-all scale-x-0 origin-left;
-                        }
-                        &:hover {
-                            @apply text-[var(--theme-color)];
-                            &::before {
-                                @apply scale-x-100;
-                            }
-                        }
-                    }
-
-                    &.linkBtn {
-                        a {
-                            @apply text-[var(--theme-color)] font-medium border-2 bg-transparent border-[var(--theme-color)] px-8 py-2 rounded-2xl shadow-lg transition-all;
-                            &::before {
-                                content: none;
-                            }
-
-                            &:hover {
-                                @apply bg-[var(--theme-color)] text-[var(--white)];
-                            }
-                        }
+        li {
+            a {
+                @apply md:text-[1rem] font-medium relative transition-all text-[1.5rem];
+                &::before {
+                    content: "";
+                    @apply absolute bottom-0 left-0 w-full bg-[var(--theme-color)] h-[2px] transition-all scale-x-0 origin-left;
+                }
+                &:hover {
+                    @apply text-[var(--theme-color)];
+                    &::before {
+                        @apply scale-x-100;
                     }
                 }
+            }
+
+            &.linkBtn {
+                a {
+                    @apply text-[var(--theme-color)] font-medium border-2 bg-transparent border-[var(--theme-color)] px-8 py-2 rounded-xl shadow-lg transition-all;
+                    &::before {
+                        content: none;
+                    }
+
+                    &:hover {
+                        @apply bg-[var(--theme-color)] text-[var(--white)];
+                    }
+                }
+            }
+        }
+    }
+
+    &.mobileMenu {
+        @apply hidden;
+    }
+
+    @include respond-to($breakpoint-md) {
+        @apply hidden;
+
+        &.mobileMenu {
+            @apply block fixed h-screen sm:w-[350px] w-[300px] md:left-[-350px] left-[-300px] top-0 bg-[var(--background)] z-10 transition-all;
+            box-shadow: 5px 0 50px rgba(0, 0, 0, 0.5);
+            transition-duration: 0.5s;
+
+            &.active {
+                @apply left-0;
             }
         }
     }

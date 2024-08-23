@@ -1,0 +1,21 @@
+// Breakpoints
+$breakpoint-xl: 1440px;
+$breakpoint-lg: 991.98px;
+$breakpoint-md: 767.98px;
+$breakpoint-sm: 575.98px;
+$breakpoint-xs: 320.98px;
+
+:root {
+  --background: #faf9f6;
+  --theme-color: #4cbb17;
+  --text-color: #333333;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
