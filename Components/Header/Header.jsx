@@ -11,7 +11,7 @@ function Header() {
         <>
             <header className="header">
                 <nav>
-                    <div className="logo">
+                    <Link href={'/'} className="logo">
                         <figure>
                             <Image
                                 src={'/images/logo.png'}
@@ -20,7 +20,7 @@ function Header() {
                                 alt='ParcelPro Logo'
                             />
                         </figure>
-                    </div>
+                    </Link>
                     <div className="navbar">
                         <ul>
                             <li>
@@ -40,12 +40,12 @@ function Header() {
                             </li>
                         </ul>
                     </div>
-                    <button class="toggleBtn" onClick={() => setHeaderActive(!headerActive)}>
-                        <i class="fas fa-bars" />
+                    <button className="toggleBtn" onClick={() => setHeaderActive(!headerActive)}>
+                        <i className="fas fa-bars" />
                     </button>
                 </nav>
             </header>
-            <div class={`${headerActive ? 'active ' : ''}mobileMenu navbar`}>
+            <div className={`${headerActive ? 'active ' : ''}mobileMenu navbar`}>
                 <ul>
                     <li>
                         <Link href=''>About Us</Link>

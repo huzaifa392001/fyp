@@ -1,0 +1,12 @@
+[
+    {
+        "img": "/images/img1.jpg",
+        "heading": "Register as a Rider",
+        "description": "Join ParcelPro as a rider and enjoy a secure and reliable delivery experience. Our trusted drivers, all of whom hold valid licenses and have passed rigorous background checks, ensure your safety on every trip. With real-time tracking and full insurance coverage for both you and your parcels, you can ride with confidence."
+    },
+    {
+        "img": "/images/img2.jpg",
+        "heading": "Register a Business",
+        "description": "Expand your business reach with ParcelPro. Our platform is designed to be inclusive, making it easy for any business to access our delivery services, even without a smartphone or credit card. Whether you’re a small business or a large enterprise, ParcelPro ensures that your deliveries are accessible to all."
+    }
+]

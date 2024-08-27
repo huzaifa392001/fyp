@@ -1,0 +1,17 @@
+[
+    {
+        "img": "/images/img2.jpg",
+        "heading": "John Doe",
+        "description": "ParcelPro has transformed the way I handle deliveries for my business. The service is reliable, the drivers are professional, and the platform is incredibly user-friendly. I can't recommend ParcelPro enough!"
+    },
+    {
+        "img": "/images/img1.jpg",
+        "heading": "Sarah Williams",
+        "description": "As a rider, I feel completely secure using ParcelPro. The real-time tracking and insurance give me peace of mind, and the drivers are always courteous and prompt. It's the best delivery service I've used!"
+    },
+    {
+        "img": "/images/img1.jpg",
+        "heading": "David Johnson",
+        "description": "Signing up my business with ParcelPro was one of the best decisions I've made. The platform is inclusive and easy to use, which has helped me reach more customers than ever before. Truly a game-changer!"
+    }
+]

@@ -1,3 +1,54 @@
 .bannerSec {
-    @apply h-[450px] w-full bg-[var(--white)] mt-4;
+    @apply w-full bg-[#bfefc6] mt-4;
+    .swiper-slide {
+        img {
+            @apply h-[600px] object-contain;
+        }
+    }
+    .swiper-pagination-bullet {
+        @apply bg-[var(--theme-color)] w-[10px] h-[10px] transition-all opacity-60;
+        transition-duration: 0.5s;
+
+        &.swiper-pagination-bullet-active {
+            @apply w-[30px] rounded-md opacity-100;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        @apply text-[var(--theme-color)] transition-all opacity-100;
+
+        &:after {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            font-weight: 400;
+            font-family: "Font Awesome 5 Pro";
+        }
+
+        &.swiper-button-next {
+            right: 80px;
+            &::after {
+                content: "\f054";
+            }
+        }
+
+        &.swiper-button-prev {
+            left: 80px;
+            &::after {
+                content: "\f053";
+            }
+        }
+
+        &::after {
+            @apply text-[2rem];
+        }
+
+        &.swiper-button-disabled {
+            @apply opacity-40;
+        }
+    }
 }

@@ -5,21 +5,21 @@ import Image from 'next/image'
 
 function WhyChoose() {
     return (
-        <section class="chooseSec">
-            <div class="container mx-auto">
-                <div class="cont">
-                    <figure class="imgCont">
+        <section className="chooseSec">
+            <div className="container mx-auto">
+                <div className="cont">
+                    <figure className="imgCont">
                         <Image
                             src={'/images/choose.png'}
                             fill
                             alt=''
                         />
                     </figure>
-                    <div class="contentCont">
+                    <div className="contentCont">
                         <h2>
                             Why Choose ParcelPro?
                         </h2>
-                        <div class="content">
+                        <div className="content">
                             <h3>
                                 Your Safety Comes First
                             </h3>
@@ -27,7 +27,7 @@ function WhyChoose() {
                                 We prioritize your security by thoroughly vetting all our drivers with comprehensive background checks and real-time tracking, ensuring that your parcels are always in safe hands.
                             </p>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <h3>
                                 Commitment to Quality
                             </h3>
@@ -35,7 +35,7 @@ function WhyChoose() {
                                 Your feedback is invaluable in helping us maintain the highest standards of service. We continuously strive to deliver the best experience with every delivery.
                             </p>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <h3>
                                 Transparent Pricing
                             </h3>
@@ -43,7 +43,7 @@ function WhyChoose() {
                                 No hidden fees, no surprises. With ParcelPro, all charges are clearly outlined, so you always know exactly what you’re paying for each service.
                             </p>
                         </div>
-                        <div class="btnCont">
+                        <div className="btnCont">
                             <Link href='' >
                                 <Image
                                     src={'/images/apple-store.svg'}

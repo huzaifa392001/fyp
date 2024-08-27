@@ -1,0 +1,22 @@
+footer {
+    @apply bg-[var(--theme-color)] pt-16;
+    .footerContent {
+        p {
+            @apply text-[var(--white)] text-[1.125rem] mt-6;
+        }
+    }
+    .links {
+        h3 {
+            @apply text-[var(--white)] text-[1.5rem] font-semibold mb-6;
+        }
+
+        ul {
+            @apply flex items-start flex-col gap-4;
+            li {
+                a {
+                    @apply text-[var(--white)] font-normal capitalize ;
+                }
+            }
+        }
+    }
+}
