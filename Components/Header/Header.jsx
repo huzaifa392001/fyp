@@ -24,7 +24,7 @@ function Header() {
                     <div className="navbar">
                         <ul>
                             <li>
-                                <Link href=''>About Us</Link>
+                                <Link href='/about'>About Us</Link>
                             </li>
                             <li>
                                 <Link href=''>Franchise</Link>

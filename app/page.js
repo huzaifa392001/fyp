@@ -8,7 +8,7 @@ import Image from "next/image";
 import TestimonialData from '@/Data/TestiData.json';
 import AboutSec from "@/Components/AboutSec/AboutSec";
 
-export default function Home() {
+export default function Home() {  
   return (
     <>
       <MainBanner />

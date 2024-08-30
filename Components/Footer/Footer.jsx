@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <div className="container mx-auto">
-                <div className="grid grid-cols-3">
+                <div className="grid grid-cols-3 -mx-3">
                     <div className="footerContent">
                         <figure className="logo">
                             <Image
@@ -25,7 +25,7 @@ function Footer() {
                         <h3>Quick Links</h3>
                         <ul>
                             <li>
-                                <Link href=''>About Us</Link>
+                                <Link href='/about'>About Us</Link>
                             </li>
                             <li>
                                 <Link href=''>Franchise</Link>
@@ -53,18 +53,52 @@ function Footer() {
                             <li>
                                 <Link href={'tel:+923361889231'} >
                                     <i className="fad fa-phone"></i>
-                                    +92 (336) 188-9231
+                                    <span>
+                                        +92 (336) 188-9231
+                                    </span>
                                 </Link>
                             </li>
                             <li>
                                 <Link href={''} >
                                     <i className="far fa-map-marked-alt" />
+                                    <span>
+                                        Head Office
+                                    </span>
                                 </Link>
                             </li>
                             <li>
                                 <Link href={'https://thehuzaifaiqbal.vercel.app/'} >
                                     <i className="fas fa-globe" />
                                     <span>The Huzaifa Iqbal</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container mx-auto">
+                    <div class="copyrightCont">
+                        <p>© 2024 ParcelPro. All rights reserved.</p>
+                        <ul class="socialLinks">
+                            <li>
+                                <Link href={''}>
+                                    <i class="fab fa-facebook-f"></i>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={''}>
+                                    <i class="fab fa-instagram"></i>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={''}>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={''}>
+                                    <i class="fab fa-twitter"></i>
                                 </Link>
                             </li>
                         </ul>
