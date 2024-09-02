@@ -1,12 +1,13 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import './Header.scss'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 function Header() {
     const [headerActive, setHeaderActive] = useState()
-
+    const activeLink = usePathname()
     return (
         <>
             <header className="header">
@@ -24,19 +25,19 @@ function Header() {
                     <div className="navbar">
                         <ul>
                             <li>
-                                <Link href='/about'>About Us</Link>
+                                <Link className={`${activeLink === "/about" ? 'active' : ""}`} href='/about'>About Us</Link>
                             </li>
                             <li>
-                                <Link href=''>Franchise</Link>
+                                <Link className={`${activeLink === "/franchise" ? 'active' : ""}`} href=''>Franchise</Link>
                             </li>
                             <li>
-                                <Link href=''>Partner</Link>
+                                <Link className={`${activeLink === "/partner" ? 'active' : ""}`} href=''>Partner</Link>
                             </li>
                             <li>
-                                <Link href=''>FAQs</Link>
+                                <Link className={`${activeLink === "/faq" ? 'active' : ""}`} href=''>FAQs</Link>
                             </li>
                             <li className='linkBtn'>
-                                <Link href=''>Contact Us</Link>
+                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href=''>Contact Us</Link>
                             </li>
                         </ul>
                     </div>

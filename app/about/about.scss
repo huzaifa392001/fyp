@@ -1,0 +1,29 @@
+.aboutInnerSec {
+    .grid {
+        @apply -mx-3;
+        > * {
+            @apply px-3 w-full;
+        }
+
+        + .grid {
+            @apply mt-10;
+        }
+    }
+    .content {
+        p {
+            @apply text-[1.125rem] leading-loose;
+            & + p {
+                @apply mt-4;
+            }
+            span {
+                @apply font-bold;
+            }
+        }
+    }
+    figure {
+        @apply w-full;
+        img {
+            @apply rounded-xl w-full object-cover;
+        }
+    }
+}

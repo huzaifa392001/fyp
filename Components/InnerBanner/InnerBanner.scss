@@ -1,0 +1,21 @@
+.innerBanner {
+    @apply pt-4;
+    background: linear-gradient(to right, var(--theme-color), transparent);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .container {
+        @apply flex items-center justify-end;
+    }
+    figure {
+        img {
+            @apply md:w-full w-2/4 ml-auto;
+        }
+    }
+    .content {
+        @apply absolute inset-0 flex items-center justify-start;
+        h1 {
+            @apply text-[var(--white)] text-[3.5rem] font-bold;
+        }
+    }
+}

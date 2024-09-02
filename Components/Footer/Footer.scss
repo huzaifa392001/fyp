@@ -6,13 +6,16 @@ footer {
         }
     }
     .footerContent {
+        .logo {
+            @apply flex items-center justify-center md:justify-start;
+        }
         p {
-            @apply text-[var(--white)] text-[1.125rem] mt-6;
+            @apply text-[var(--white)] text-[1.125rem] mt-6  text-start;
         }
     }
     .links {
         h3 {
-            @apply text-[var(--white)] text-[1.5rem] font-semibold mb-6;
+            @apply text-[var(--white)] text-[1.5rem] font-semibold md:mb-6 mb-3;
         }
 
         ul {

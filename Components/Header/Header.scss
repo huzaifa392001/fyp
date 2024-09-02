@@ -16,9 +16,10 @@ header {
                 @apply md:text-[1rem] font-medium relative transition-all text-[1.5rem] pb-0.5;
                 &::before {
                     content: "";
-                    @apply absolute bottom-0 left-0 w-full bg-[var(--theme-color)] h-[2px] transition-all scale-x-0 origin-left ;
+                    @apply absolute bottom-0 left-0 w-full bg-[var(--theme-color)] h-[2px] transition-all scale-x-0 origin-left;
                 }
-                &:hover {
+                &:hover,
+                &.active {
                     @apply text-[var(--theme-color)];
                     &::before {
                         @apply scale-x-100;

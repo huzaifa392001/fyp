@@ -22,8 +22,12 @@ html {
 
   @include respond-to($breakpoint-sm) {
     font-size: 13px !important; // sm
-    section {
+    section,
+    footer {
       @apply py-8 px-2;
+    }
+    .innerBanner {
+      @apply px-2;
     }
   }
 
@@ -41,4 +45,16 @@ body {
 
 section {
   padding: 6rem 0;
+}
+
+.secHeading {
+  @apply text-[2.25rem] text-[var(--black)] font-bold relative inline-block;
+  &::before {
+    content: "";
+    @apply absolute bottom-0 left-0 w-full h-0.5;
+    background: linear-gradient(to left, var(--theme-color), transparent);
+  }
+  & + p {
+    @apply mt-3;
+  }
 }

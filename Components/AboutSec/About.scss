@@ -1,5 +1,10 @@
 .aboutSec {
-    @apply relative h-[700px];
+    @apply relative md:h-[700px] h-[450px];
+    figure {
+        img {
+            object-fit: cover;
+        }
+    }
     .content {
         @apply absolute inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] text-center;
         h2 {
@@ -9,7 +14,7 @@
             }
         }
         p {
-            @apply text-[var(--white)] text-[1.125rem] leading-loose w-3/4 mx-auto;
+            @apply text-[var(--white)] text-[1.125rem] leading-loose md:w-3/4 w-full mx-auto;
         }
     }
 }

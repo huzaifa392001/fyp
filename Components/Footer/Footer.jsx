@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <div className="container mx-auto">
-                <div className="grid grid-cols-3 -mx-3">
+                <div className="grid md:grid-cols-3 gap-y-4 -mx-3">
                     <div className="footerContent">
                         <figure className="logo">
                             <Image
@@ -76,29 +76,29 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container mx-auto">
-                    <div class="copyrightCont">
+            <div className="copyright">
+                <div className="container mx-auto">
+                    <div className="copyrightCont">
                         <p>© 2024 ParcelPro. All rights reserved.</p>
-                        <ul class="socialLinks">
+                        <ul className="socialLinks">
                             <li>
                                 <Link href={''}>
-                                    <i class="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f"></i>
                                 </Link>
                             </li>
                             <li>
                                 <Link href={''}>
-                                    <i class="fab fa-instagram"></i>
+                                    <i className="fab fa-instagram"></i>
                                 </Link>
                             </li>
                             <li>
                                 <Link href={''}>
-                                    <i class="fab fa-linkedin-in"></i>
+                                    <i className="fab fa-linkedin-in"></i>
                                 </Link>
                             </li>
                             <li>
                                 <Link href={''}>
-                                    <i class="fab fa-twitter"></i>
+                                    <i className="fab fa-twitter"></i>
                                 </Link>
                             </li>
                         </ul>
