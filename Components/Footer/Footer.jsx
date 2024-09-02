@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <div className="container mx-auto">
-                <div className="grid md:grid-cols-3 gap-y-4 -mx-3">
+                <div className="grid ">
                     <div className="footerContent">
                         <figure className="logo">
                             <Image
