@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url("../public/css/fonts.css");
+@import url("../../public/css/fonts.css");
 // @import url("../public/variables.scss");
 
 html {
@@ -56,5 +56,18 @@ section {
   }
   & + p {
     @apply mt-3;
+  }
+}
+
+.themeBtn {
+  @apply text-[var(--theme-color)] px-10 py-2 rounded-3xl shadow-lg hover:text-[var(--white)] transition-all border-2 border-[var(--theme-color)];
+  transition-duration: 0.3s;
+  background: linear-gradient(to right, var(--theme-color), var(--theme-color));
+  background-size: 0 100%;
+  background-position: left left;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-size: 100% 100%;
   }
 }

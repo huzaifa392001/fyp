@@ -1,0 +1,23 @@
+.contactInnerSec {
+    form {
+        .formCont {
+            @apply grid grid-cols-2 -mx-3 gap-y-5;
+            .inputCont {
+                @apply flex flex-col gap-1 px-3;
+                label {
+                    @apply font-semibold text-[1.25rem];
+                }
+                input,
+                textarea {
+                    @apply h-[50px] w-full rounded-xl px-4 outline-none border-2 focus:border-[var(--theme-color)];
+                }
+                textarea {
+                    @apply h-auto pt-2;
+                }
+            }
+        }
+        .themeBtn {
+            @apply w-fit flex mx-auto mt-5;
+        }
+    }
+}

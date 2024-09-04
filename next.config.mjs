@@ -6,6 +6,11 @@ const nextConfig = {
     includePaths: [path.join(process.cwd(), 'styles')],
     prependData: `@import "/public/variables.scss";`, // Adjust the path if needed
   },
+  images: {
+    domains: [
+      'avatars.githubusercontent.com'
+    ]
+  }
 };
 
 export default nextConfig;

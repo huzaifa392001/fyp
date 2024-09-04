@@ -1,4 +1,7 @@
 .aboutInnerSec {
+    .container {
+        @apply relative;
+    }
     .grid {
         @apply -mx-3;
         > * {

@@ -37,7 +37,7 @@ function Header() {
                                 <Link className={`${activeLink === "/faq" ? 'active' : ""}`} href=''>FAQs</Link>
                             </li>
                             <li className='linkBtn'>
-                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href=''>Contact Us</Link>
+                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Contact Us</Link>
                             </li>
                         </ul>
                     </div>
