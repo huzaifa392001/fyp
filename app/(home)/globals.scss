@@ -63,7 +63,7 @@ section {
 }
 
 .secHeading {
-  @apply text-[2.25rem] text-[var(--black)] font-bold relative inline-block;
+  @apply text-[2.25rem] text-[var(--black)] font-bold relative inline-block dark:text-[var(--white)];
 
   &::before {
     content: "";

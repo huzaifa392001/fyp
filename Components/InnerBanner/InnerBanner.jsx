@@ -5,7 +5,7 @@ import './InnerBanner.scss'
 function InnerBanner(props) {
     return (
         <div className="innerBanner">
-            <div className="container relative">
+            <div className="container">
                 <figure>
                     <Image
                         src={'/images/banner-element.png'}

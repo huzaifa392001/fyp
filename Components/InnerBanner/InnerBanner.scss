@@ -1,11 +1,12 @@
 .innerBanner {
-    @apply pt-4;
+    @apply pt-[120px];
     background: linear-gradient(to right, var(--theme-color), transparent);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     .container {
-        @apply flex items-center justify-end;
+        @apply flex items-center justify-end relative;
+        position: relative;
     }
     figure {
         img {
