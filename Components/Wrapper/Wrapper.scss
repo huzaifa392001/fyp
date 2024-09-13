@@ -1,0 +1,8 @@
+.preloader {
+    @apply fixed inset-0 bg-[var(--background)];
+    z-index: 9999999999;
+
+    img {
+        @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+    }
+}

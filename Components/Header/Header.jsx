@@ -1,13 +1,39 @@
-'use client'
-import React, { useLayoutEffect, useState } from 'react'
-import './Header.scss'
-import Link from 'next/link'
-import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+'use client';
+import React, { useLayoutEffect, useState, useEffect } from 'react';
+import './Header.scss';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 function Header() {
-    const [headerActive, setHeaderActive] = useState()
-    const activeLink = usePathname()
+    const [headerActive, setHeaderActive] = useState(false);
+    const activeLink = usePathname();
+    const [ActiveBtn, SetActiveBtn] = useState(false);
+
+    // Function to toggle theme
+    const toggleTheme = () => {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        SetActiveBtn(!ActiveBtn);
+    };
+
+    // Apply theme on page load
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            SetActiveBtn(true); // Set the toggle button to active if dark theme is applied
+        } else {
+            document.documentElement.classList.remove('dark');
+            SetActiveBtn(false);
+        }
+    }, []);
+
     return (
         <>
             <header className="header">
@@ -25,22 +51,33 @@ function Header() {
                     <div className="navbar">
                         <ul>
                             <li>
+                                <Link className={`${activeLink === "/" ? 'active' : ""}`} href='/'>Home</Link>
+                            </li>
+                            <li>
                                 <Link className={`${activeLink === "/about" ? 'active' : ""}`} href='/about'>About Us</Link>
                             </li>
                             <li>
-                                <Link className={`${activeLink === "/franchise" ? 'active' : ""}`} href=''>Franchise</Link>
+                                <Link className={`${activeLink === "/services" ? 'active' : ""}`} href='/services'>Services</Link>
                             </li>
                             <li>
-                                <Link className={`${activeLink === "/partner" ? 'active' : ""}`} href=''>Partner</Link>
+                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Contact Us</Link>
                             </li>
                             <li>
-                                <Link className={`${activeLink === "/faq" ? 'active' : ""}`} href=''>FAQs</Link>
+                                <Link className={`${activeLink === "/faq" ? 'active' : ""}`} href='/faq'>FAQs</Link>
+                            </li>
+                            <li>
+                                <button onClick={toggleTheme} className={ActiveBtn ? 'switchBtn active' : 'switchBtn'}>
+                                    <span className="ball" />
+                                </button>
                             </li>
                             <li className='linkBtn'>
-                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Contact Us</Link>
+                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Get Started</Link>
                             </li>
                         </ul>
                     </div>
+                    <button onClick={toggleTheme} className={ActiveBtn ? 'switchBtn active' : 'switchBtn'}>
+                        <span className="ball" />
+                    </button>
                     <button className="toggleBtn" onClick={() => setHeaderActive(!headerActive)}>
                         <i className="fas fa-bars" />
                     </button>
@@ -49,24 +86,24 @@ function Header() {
             <div className={`${headerActive ? 'active ' : ''}mobileMenu navbar`}>
                 <ul>
                     <li>
-                        <Link href=''>About Us</Link>
+                        <Link href='/about'>About Us</Link>
                     </li>
                     <li>
-                        <Link href=''>Franchise</Link>
+                        <Link href='/franchise'>Franchise</Link>
                     </li>
                     <li>
-                        <Link href=''>Partner</Link>
+                        <Link href='/partner'>Partner</Link>
                     </li>
                     <li>
-                        <Link href=''>FAQs</Link>
+                        <Link href='/faq'>FAQs</Link>
                     </li>
                     <li className='linkBtn'>
-                        <Link href=''>Contact Us</Link>
+                        <Link href='/contact'>Contact Us</Link>
                     </li>
                 </ul>
-            </div >
+            </div>
         </>
-    )
+    );
 }
 
-export default Header
+export default Header;

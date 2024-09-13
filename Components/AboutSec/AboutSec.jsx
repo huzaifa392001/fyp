@@ -1,26 +1,41 @@
-import React from 'react'
-import './About.scss'
 import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import "./AboutSec.scss"
 
 function AboutSec() {
     return (
-        <section className="aboutSec py-0">
-            <figure>
-                <Image
-                    src="/images/about.jpg"
-                    alt="About our company"
-                    fill
-                />
-            </figure>
-            <div className="content">
-                <div className="md:container mx-auto">
-                    <h2>
-                        <span>About Us</span>
-                        {"Delivering Trust, One Parcel at a Time"}
-                    </h2>
-                    <p>
-                        {"ParcelPro is a dynamic and innovative platform designed to revolutionize the way deliveries are managed and executed. We connect businesses, individuals, and drivers in a seamless network that ensures fast, reliable, and secure delivery services. Whether it's a business-to-business shipment, a vendor-to-customer package, or a personal delivery, ParcelPro is committed to providing top-notch service with a focus on safety and convenience. Our platform is inclusive, accessible to everyone, and designed to meet the diverse needs of our users. With real-time tracking, full insurance coverage, and a rigorous driver vetting process, ParcelPro guarantees peace of mind and satisfaction for every delivery."}
-                    </p>
+        <section className='aboutUsSec'>
+            <div className="container">
+                <div className="aboutRow">
+                    <figure>
+                        <Image src={'/images/aboutImg.svg'} width={675} height={506} alt='About section Image' />
+                    </figure>
+                    <div className="content">
+                        <h2>
+                            <span>
+                                About Us
+                            </span>
+                            Find Out A Little More
+                        </h2>
+                        <p>
+                            We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of dellivery.
+                        </p>
+                        <Link className='themeBtn' href={'/about'}>Read More</Link>
+                    </div>
+                </div>
+                <div className="aboutRow">
+                    <div className="content">
+                        <h2>
+                            Your Safety Is Important
+                        </h2>
+                        <p>
+                            Each delivery is tracked in real-time, and both your parcels and trips are fully insured, whether you’re a shipper or a passenger. With ParcelPro, you can have complete peace of mind.
+                        </p>
+                    </div>
+                    <figure>
+                        <Image src={'/images/aboutImg2.svg'} width={675} height={506} alt='About section Image' />
+                    </figure>
                 </div>
             </div>
         </section>

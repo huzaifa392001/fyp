@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'selector',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,10 +20,10 @@ module.exports = {
       screens: {
         // Don't need xs since Tailwind uses min-width approach
         // to its media queries.
-        sm: '576px',
-        md: '768px',
-        lg: '992px',
-        xl: '1200px',
+        sm: '100%',
+        md: '575px',
+        lg: '767px',
+        xl: '1025px',
         xxl: '1400px',
       },
     },

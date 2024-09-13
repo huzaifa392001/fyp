@@ -6,12 +6,14 @@ import hireData from '@/Data/HireCardData.json';
 import Image from "next/image";
 // import TestiSec from "../Components/TestiSec/TestiSec";
 import TestimonialData from '@/Data/TestiData.json';
+import AboutBanner from "@/Components/AboutBanner/AboutBanner";
 import AboutSec from "@/Components/AboutSec/AboutSec";
 
-export default function Home() {  
+export default function Home() {
   return (
     <>
       <MainBanner />
+      <AboutSec />
       <WhyChoose />
       <section className="serviceSec">
         <div className="container mx-auto">
@@ -27,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <AboutSec />
+      {/* <AboutBanner /> */}
       <section className="serviceSec">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

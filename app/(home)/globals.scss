@@ -6,7 +6,7 @@
 
 html {
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: clip;
 
   @include respond-to($breakpoint-xl) {
     font-size: 14px !important; // xl
@@ -14,6 +14,19 @@ html {
 
   @include respond-to($breakpoint-lg) {
     font-size: 12px !important; // lg
+
+    header {
+      @apply py-4 px-6;
+    }
+
+    section,
+    footer {
+      @apply py-8 px-6;
+    }
+
+    .innerBanner {
+      @apply px-2;
+    }
   }
 
   @include respond-to($breakpoint-md) {
@@ -22,10 +35,12 @@ html {
 
   @include respond-to($breakpoint-sm) {
     font-size: 13px !important; // sm
+
     section,
     footer {
       @apply py-8 px-2;
     }
+
     .innerBanner {
       @apply px-2;
     }
@@ -38,9 +53,9 @@ html {
 
 body {
   color: var(--text-color);
-  background: var(--background);
-  overflow-x: hidden;
+  overflow-x: clip;
   font-family: "Axiforma-regular", sans-serif;
+  @apply bg-[var(--background)] dark:bg-[var(--background)] dark:text-[var(--white)];
 }
 
 section {
@@ -49,25 +64,18 @@ section {
 
 .secHeading {
   @apply text-[2.25rem] text-[var(--black)] font-bold relative inline-block;
+
   &::before {
     content: "";
     @apply absolute bottom-0 left-0 w-full h-0.5;
     background: linear-gradient(to left, var(--theme-color), transparent);
   }
-  & + p {
+
+  &+p {
     @apply mt-3;
   }
 }
 
 .themeBtn {
-  @apply text-[var(--theme-color)] px-10 py-2 rounded-3xl shadow-lg hover:text-[var(--white)] transition-all border-2 border-[var(--theme-color)];
-  transition-duration: 0.3s;
-  background: linear-gradient(to right, var(--theme-color), var(--theme-color));
-  background-size: 0 100%;
-  background-position: left left;
-  background-repeat: no-repeat;
-
-  &:hover {
-    background-size: 100% 100%;
-  }
+  @apply text-[var(--white)] px-12 py-2 rounded-3xl shadow-lg transition-all bg-[var(--theme-color)] block w-fit font-medium text-[1.125rem] hover:shadow-xl hover:bg-[var(--secondary-color)];
 }

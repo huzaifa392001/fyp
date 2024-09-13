@@ -1,9 +1,9 @@
-import AboutSec from '@/Components/AboutSec/AboutSec'
 import InnerBanner from '@/Components/InnerBanner/InnerBanner'
 import SectionHeading from '@/Components/SectionHeading/SectionHeading'
 import React from 'react'
 import './about.scss'
 import Image from 'next/image'
+import AboutBanner from '@/Components/AboutBanner/AboutBanner'
 
 function page() {
   return (
@@ -76,7 +76,7 @@ function page() {
           </div>
         </div>
       </section>
-      <AboutSec />
+      {/* <AboutBanner /> */}
     </main>
   )
 }

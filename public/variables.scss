@@ -6,13 +6,18 @@ $breakpoint-sm: 575.98px;
 $breakpoint-xs: 320.98px;
 
 :root {
-  --background: #faf9f6;
+  --background: #fafafa;
   --theme-color: #4cbb17;
   --secondary-color: #2A4494;
   --dark-theme-color: #0B5D1E;
-  --text-color: #333333;
+  --text-color: #777776;
   --white: #ffffff;
   --black: #000000;
+}
+
+.dark:root {
+  --background: #121212;
+  --text-color: var(--white);
 }
 
 // Mixin for media queries
