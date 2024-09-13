@@ -16,6 +16,7 @@ function Wrapper({ children }) {
 
         tl.to('.preloader img', {
             autoAlpha: 0,
+            delay: 1
         }).to('.preloader', {
             autoAlpha: 0,
         }, "-=0.5").to('.preloader', {
