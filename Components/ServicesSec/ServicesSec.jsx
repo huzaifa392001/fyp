@@ -15,7 +15,7 @@ function ServicesSec() {
                     </div>
                     <div className="cardRow">
                         {serviceData.map((data, index) => (
-                            <div className="cardCol">
+                            <div className="cardCol" key={index}>
                                 <div className="serviceCard">
                                     <h4>{data.heading}</h4>
                                     <figure>
