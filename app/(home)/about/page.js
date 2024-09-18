@@ -4,6 +4,8 @@ import React from 'react'
 import './about.scss'
 import Image from 'next/image'
 import AboutBanner from '@/Components/AboutBanner/AboutBanner'
+import ContactUsSec from '@/Components/ContactUsSec/ContactUsSec'
+import AboutSec from '@/Components/AboutSec/AboutSec'
 
 function page() {
   return (
@@ -43,6 +45,11 @@ function page() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <AboutSec />
+      <section className='aboutInnerSec'>
+        <div className='container'>
           <div className="grid grid-cols-1">
             <div className="content">
               <SectionHeading heading={"Our Vision"} />
@@ -77,8 +84,16 @@ function page() {
         </div>
       </section>
       {/* <AboutBanner /> */}
+      <ContactUsSec />
     </main>
   )
 }
 
 export default page
+
+export const metadata = {
+  title: "About - ParcelPro",
+  alternates: {
+    canonical: "https://parcelproconnect.vercel.app/about",
+  },
+};

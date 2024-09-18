@@ -38,7 +38,7 @@ function Header() {
         <>
             <header className="header">
                 <nav>
-                    <Link href={'/'} className="logo">
+                    <Link href={'/'} onClick={() => headerActive === true ? setHeaderActive(!headerActive) : ''} className="logo">
                         <figure>
                             <Image
                                 src={'/images/logo.png'}
@@ -60,10 +60,10 @@ function Header() {
                                 <Link className={`${activeLink === "/services" ? 'active' : ""}`} href='/services'>Services</Link>
                             </li>
                             <li>
-                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Contact Us</Link>
+                                <Link className={`${activeLink === "/faqs" ? 'active' : ""}`} href='/faqs'>FAQs</Link>
                             </li>
                             <li>
-                                <Link className={`${activeLink === "/faq" ? 'active' : ""}`} href='/faq'>FAQs</Link>
+                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Contact Us</Link>
                             </li>
                             <li>
                                 <button onClick={toggleTheme} className={ActiveBtn ? 'switchBtn active' : 'switchBtn'}>
@@ -71,7 +71,7 @@ function Header() {
                                 </button>
                             </li>
                             <li className='linkBtn'>
-                                <Link className={`${activeLink === "/contact" ? 'active' : ""}`} href='/contact'>Get Started</Link>
+                                <Link href='/admin'>Get Started</Link>
                             </li>
                         </ul>
                     </div>
@@ -86,19 +86,22 @@ function Header() {
             <div className={`${headerActive ? 'active ' : ''}mobileMenu navbar`}>
                 <ul>
                     <li>
-                        <Link href='/about'>About Us</Link>
+                        <Link onClick={() => setHeaderActive(!headerActive)} href='/'>Home</Link>
                     </li>
                     <li>
-                        <Link href='/franchise'>Franchise</Link>
+                        <Link onClick={() => setHeaderActive(!headerActive)} href='/about'>About Us</Link>
                     </li>
                     <li>
-                        <Link href='/partner'>Partner</Link>
+                        <Link onClick={() => setHeaderActive(!headerActive)} href='/services'>Services</Link>
                     </li>
                     <li>
-                        <Link href='/faq'>FAQs</Link>
+                        <Link onClick={() => setHeaderActive(!headerActive)} href='/faqs'>FAQs</Link>
+                    </li>
+                    <li>
+                        <Link onClick={() => setHeaderActive(!headerActive)} href='/contact'>Contact Us</Link>
                     </li>
                     <li className='linkBtn'>
-                        <Link href='/contact'>Contact Us</Link>
+                        <Link href='/admin'>Get Started</Link>
                     </li>
                 </ul>
             </div>

@@ -1,11 +1,12 @@
 "use client";
-import React, { useLayoutEffect, useRef } from "react";
+import React, { Suspense, useLayoutEffect, useRef } from "react";
 import Footer from '../Footer/Footer';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import "./Wrapper.scss"
 import Image from "next/image";
+import loading from "@/app/(home)/loading";
 
 function Wrapper({ children }) {
     const mainWrapperRef = useRef(null);
@@ -55,8 +56,10 @@ function Wrapper({ children }) {
             <div id="smooth-wrapper" ref={mainWrapperRef}>
                 <div id="smooth-content">
                     {/* <Header /> */}
-                    {children}
-                    <Footer />
+                    <Suspense fallback={loading}>
+                        {children}
+                        <Footer />
+                    </Suspense>
                 </div>
             </div>
         </>

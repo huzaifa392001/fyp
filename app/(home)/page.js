@@ -8,13 +8,16 @@ import Image from "next/image";
 import TestimonialData from '@/Data/TestiData.json';
 import AboutBanner from "@/Components/AboutBanner/AboutBanner";
 import AboutSec from "@/Components/AboutSec/AboutSec";
+import ServicesSec from "@/Components/ServicesSec/ServicesSec";
+import ContactUsSec from "@/Components/ContactUsSec/ContactUsSec";
 
 export default function Home() {
   return (
     <>
       <MainBanner />
-      <AboutSec />
+      <AboutSec showBtn />
       <WhyChoose />
+      <ServicesSec />
       <section className="serviceSec">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -44,6 +47,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ContactUsSec />
       {/* <TestiSec data={TestimonialData} /> */}
     </>
   );

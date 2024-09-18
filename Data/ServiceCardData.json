@@ -1,0 +1,17 @@
+[
+    {
+        "img": "/images/service1.png",
+        "heading": "Payment Done",
+        "description": "Pay with a Visa or PayPal card and without much do."
+    },
+    {
+        "img": "/images/service2.png",
+        "heading": "Find Your Product",
+        "description": "We offer sale of products through the internet"
+    },
+    {
+        "img": "/images/service3.png",
+        "heading": "Product Received",
+        "description": "In our app you can see the delay time of your order."
+    }
+]

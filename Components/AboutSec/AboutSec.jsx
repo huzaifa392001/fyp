@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import "./AboutSec.scss"
 
-function AboutSec() {
+function AboutSec({ props }) {
     return (
         <section className='aboutUsSec'>
             <div className="container">
@@ -21,7 +21,9 @@ function AboutSec() {
                         <p>
                             We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of dellivery.
                         </p>
-                        <Link className='themeBtn' href={'/about'}>Read More</Link>
+                        {props?.showBtn && (
+                            <Link className='themeBtn' href={'/about'}>Read More</Link>
+                        )}
                     </div>
                 </div>
                 <div className="aboutRow">

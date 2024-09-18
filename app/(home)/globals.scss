@@ -79,3 +79,12 @@ section {
 .themeBtn {
   @apply text-[var(--white)] px-12 py-2 rounded-3xl shadow-lg transition-all bg-[var(--theme-color)] block w-fit font-medium text-[1.125rem] hover:shadow-xl hover:bg-[var(--secondary-color)];
 }
+
+.preloader {
+  @apply fixed inset-0 bg-[var(--background)] h-screen w-screen;
+  z-index: 9999999999;
+
+  img {
+    @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+  }
+}

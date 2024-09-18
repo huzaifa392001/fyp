@@ -42,44 +42,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className="links">
-                        <h3>Contact</h3>
-                        <ul className='contactInfo'>
-                            <li>
-                                <Link href={'mailto:huzaifaiqbal134@gmail.com'} >
-                                    <i className="fad fa-envelope-open-text" />
-                                    <span>huzaifaiqbal134@gmail.com</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={'tel:+923361889231'} >
-                                    <i className="fad fa-phone"></i>
-                                    <span>
-                                        +92 (336) 188-9231
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={''} >
-                                    <i className="far fa-map-marked-alt" />
-                                    <span>
-                                        Head Office
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={'https://thehuzaifaiqbal.vercel.app/'} >
-                                    <i className="fas fa-globe" />
-                                    <span>The Huzaifa Iqbal</span>
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div className="copyright">
-                <div className="container mx-auto">
-                    <div className="copyrightCont">
-                        <p>© 2024 ParcelPro. All rights reserved.</p>
+                        <h3>Scoial Media</h3>
                         <ul className="socialLinks">
                             <li>
                                 <Link href={''}>
@@ -102,6 +65,14 @@ function Footer() {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="copyright">
+                <div className="container mx-auto">
+                    <div className="copyrightCont">
+                        <p>© 2024 ParcelPro. All rights reserved.</p>
+
                     </div>
                 </div>
             </div>

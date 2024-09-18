@@ -42,3 +42,10 @@ function page() {
 }
 
 export default page
+
+export const metadata = {
+    title: "Contact - ParcelPro",
+    alternates: {
+        canonical: "https://parcelproconnect.vercel.app/contact",
+    },
+};

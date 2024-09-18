@@ -7,7 +7,7 @@
         }
     }
 
-    .figure {
+    figure {
         @include respond-to($breakpoint-lg) {
             flex: 0 1 100%;
         }
