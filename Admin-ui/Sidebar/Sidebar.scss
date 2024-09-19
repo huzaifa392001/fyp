@@ -1,0 +1,20 @@
+aside {
+    @apply bg-[var(--white)] dark:bg-[var(--black)] shadow-xl border-r-2 border-[var(--theme-color)] max-w-[350px] h-screen py-10;
+
+    ul {
+        li {
+            a {
+                @apply text-[var(--black)] dark:text-[var(--white)] text-[1.25rem] block px-8 py-5;
+            }
+
+            +li,
+            &:first-child {
+                @apply border-t-2 border-[#0004] dark:border-[#fff4];
+            }
+
+            &:last-child {
+                @apply border-b-2 border-[#0004] dark:border-[#fff4];
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+header {
+    @apply flex items-center justify-between px-8 border-b-2 border-[var(--theme-color)];
+
+    .logo {
+        @apply w-[250px] h-[80px] overflow-hidden;
+
+        img {
+            @apply w-full h-full object-contain;
+        }
+    }
+
+    nav {
+        @apply relative;
+
+        ul {
+            @apply flex items-center gap-x-5;
+
+            li {
+                button {
+                    @apply flex items-center gap-2 cursor-pointer;
+
+                    img {
+                        @apply w-[30px] h-[30px] rounded-full;
+                        box-shadow: 0 0 15px 3px #0005;
+                    }
+                }
+            }
+        }
+
+        .switchBtn {
+            @apply border-2 border-[var(--black)] w-12 h-6 lg:w-8 lg:h-4 rounded-xl items-center justify-start transition-all relative dark:border-[var(--white)] flex ml-auto;
+
+            .ball {
+                @apply w-4 h-4 lg:w-2 lg:h-2 rounded-full bg-black block ml-0 absolute top-2/4 -translate-y-2/4 left-0.5 dark:bg-white;
+                transition: all 0.5s ease;
+            }
+
+            &.active {
+                @apply justify-end;
+
+                .ball {
+                    @include respond-to($breakpoint-lg) {
+                        left: calc(100% - 14px);
+                    }
+
+                    left: calc(100% - 10px);
+                }
+            }
+        }
+
+        .userInfo {
+            @apply absolute top-[100%] bg-white dark:bg-black min-w-[200px] right-0 shadow-xl rounded-lg overflow-clip transition-all opacity-0 invisible select-none;
+
+            ul {
+                @apply block;
+            }
+
+            li {
+                a {
+                    @apply text-[1.125rem] px-3 py-2 block text-[var(--black)] dark:text-[var(--white)] transition-all;
+
+                    &:hover {
+                        @apply bg-[#0002] dark:bg-[#fff2];
+                    }
+                }
+
+                &.logout{
+                    @apply bg-[#ca0b00];
+                    a{
+                        @apply text-[var(--white)]
+                    }
+                }
+            }
+
+            &.active {
+                @apply top-[150%] opacity-100 visible select-all;
+            }
+        }
+    }
+}
