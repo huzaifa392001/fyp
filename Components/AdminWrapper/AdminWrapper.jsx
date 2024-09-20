@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import AdminHeader from "@/Admin-ui/AdminHeader/AdminHeader"
 import Sidebar from "@/Admin-ui/Sidebar/Sidebar"
 import Login from "@/Components/Login/Login"
@@ -11,9 +11,11 @@ function AdminWrapper({ children }) {
             {login ? (
                 <>
                     <AdminHeader />
-                    <main>
+                    <main className='mainAdminWrapper'>
                         <Sidebar />
-                        {children}
+                        <div className="innerWrapper">
+                            {children}
+                        </div>
                     </main>
                 </>
             ) : <Login />}

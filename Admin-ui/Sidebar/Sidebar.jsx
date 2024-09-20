@@ -7,16 +7,16 @@ function Sidebar() {
     <aside>
       <ul>
         <li>
-          <Link href={'#'}><i class="fas fa-home"></i> Dashboard</Link>
+          <Link href={'#'}><i className="fas fa-home"></i> Dashboard</Link>
         </li>
         <li>
-          <Link href={'#'}><i class="far fa-users"></i> Customers</Link>
+          <Link href={'#'}><i className="far fa-users"></i> Customers</Link>
         </li>
         <li>
-          <Link href={'#'}><i class="fal fa-biking"></i> Riders</Link>
+          <Link href={'#'}><i className="fal fa-biking"></i> Delivery Partners</Link>
         </li>
         <li>
-          <Link href={'#'}><i class="fas fa-badge-dollar"></i> Deals</Link>
+          <Link href={'#'}><i className="fas fa-badge-dollar"></i> Deals</Link>
         </li>
       </ul>
     </aside>

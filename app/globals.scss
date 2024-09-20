@@ -1,7 +1,5 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import url("../../public/css/fonts.css");
+@import url('./index.css');
+@import url("../public/css/fonts.css");
 // @import url("../public/variables.scss");
 
 html {
@@ -86,5 +84,18 @@ section {
 
   img {
     @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+  }
+}
+
+.mainAdminWrapper {
+  @apply flex;
+
+  aside {
+    flex: 0 1 300px;
+  }
+
+  .innerWrapper {
+    flex: 0 1 calc(100% - 300px);
+    @apply p-4;
   }
 }

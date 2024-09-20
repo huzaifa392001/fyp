@@ -1,5 +1,5 @@
 import Wrapper from "@/Components/Wrapper/Wrapper";
-import "./globals.scss";
+import "../globals.scss";
 import Fonts from "@/Components/Fonts/Fonts"; // Ensure the path is correct
 import Header from "@/Components/Header/Header";
 
