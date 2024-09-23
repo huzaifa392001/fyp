@@ -1,7 +1,7 @@
-import Wrapper from "@/Components/Wrapper/Wrapper";
+import Wrapper from "@/components/Wrapper/Wrapper";
 import "../globals.scss";
-import Fonts from "@/Components/Fonts/Fonts"; // Ensure the path is correct
-import Header from "@/Components/Header/Header";
+import Fonts from "@/components/Fonts/Fonts"; // Ensure the path is correct
+import Header from "@/components/Header/Header";
 
 export const metadata = {
   title: "Parcel Pro Connect",

@@ -1,5 +1,5 @@
-import AdminWrapper from "@/Components/AdminWrapper/AdminWrapper";
-import Fonts from "@/Components/Fonts/Fonts"; // Ensure the path is correct
+import AdminWrapper from "@/components/AdminWrapper/AdminWrapper";
+import Fonts from "@/components/Fonts/Fonts"; // Ensure the path is correct
 import '../globals.scss'
 
 export const metadata = {

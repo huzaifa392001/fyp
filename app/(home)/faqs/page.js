@@ -1,4 +1,4 @@
-import InnerBanner from '@/Components/InnerBanner/InnerBanner'
+import InnerBanner from '@/components/InnerBanner/InnerBanner'
 import React from 'react'
 
 function page() {

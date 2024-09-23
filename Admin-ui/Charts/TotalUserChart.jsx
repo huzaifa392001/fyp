@@ -1,21 +1,18 @@
 "use client"
 import React from 'react'
-import { TrendingUp } from "lucide-react"
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
-} from "@/Components/ui/card"
+} from "@/components/ui/card"
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/Components/ui/chart"
+} from "@/components/ui/chart"
 export const description = "A stacked area chart"
 const chartConfig = {
   deliveryPartners: {

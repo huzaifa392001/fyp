@@ -1,15 +1,15 @@
-import ImgCard from "@/Components/ImgCard/ImgCard";
-import MainBanner from "@/Components/MainBanner/MainBanner";
-import WhyChoose from "@/Components/WhyChoose/WhyChoose";
+import ImgCard from "@/components/ImgCard/ImgCard";
+import MainBanner from "@/components/MainBanner/MainBanner";
+import WhyChoose from "@/components/WhyChoose/WhyChoose";
 import safetyData from '@/Data/ImgCardData.json';
 import hireData from '@/Data/HireCardData.json';
 import Image from "next/image";
 // import TestiSec from "../Components/TestiSec/TestiSec";
 import TestimonialData from '@/Data/TestiData.json';
-import AboutBanner from "@/Components/AboutBanner/AboutBanner";
-import AboutSec from "@/Components/AboutSec/AboutSec";
-import ServicesSec from "@/Components/ServicesSec/ServicesSec";
-import ContactUsSec from "@/Components/ContactUsSec/ContactUsSec";
+import AboutBanner from "@/components/AboutBanner/AboutBanner";
+import AboutSec from "@/components/AboutSec/AboutSec";
+import ServicesSec from "@/components/ServicesSec/ServicesSec";
+import ContactUsSec from "@/components/ContactUsSec/ContactUsSec";
 
 export default function Home() {
   return (

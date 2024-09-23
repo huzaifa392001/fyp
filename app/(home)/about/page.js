@@ -1,11 +1,11 @@
-import InnerBanner from '@/Components/InnerBanner/InnerBanner'
-import SectionHeading from '@/Components/SectionHeading/SectionHeading'
+import InnerBanner from '@/components/InnerBanner/InnerBanner'
+import SectionHeading from '@/components/SectionHeading/SectionHeading'
 import React from 'react'
 import './about.scss'
 import Image from 'next/image'
-import AboutBanner from '@/Components/AboutBanner/AboutBanner'
-import ContactUsSec from '@/Components/ContactUsSec/ContactUsSec'
-import AboutSec from '@/Components/AboutSec/AboutSec'
+import AboutBanner from '@/components/AboutBanner/AboutBanner'
+import ContactUsSec from '@/components/ContactUsSec/ContactUsSec'
+import AboutSec from '@/components/AboutSec/AboutSec'
 
 function page() {
   return (

@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import AdminHeader from "@/Admin-ui/AdminHeader/AdminHeader"
 import Sidebar from "@/Admin-ui/Sidebar/Sidebar"
-import Login from "@/Components/Login/Login"
+import Login from "@/components/Login/Login"
 
 function AdminWrapper({ children }) {
     const [login, isLoggedIn] = useState(true)

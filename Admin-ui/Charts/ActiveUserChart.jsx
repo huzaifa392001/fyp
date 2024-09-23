@@ -10,13 +10,13 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/Components/ui/card"
+} from "@/components/ui/card"
 import {
     ChartConfig,
     ChartContainer,
     ChartTooltip,
     ChartTooltipContent,
-} from "@/Components/ui/chart"
+} from "@/components/ui/chart"
 
 export const description = "A simple area chart"
 
