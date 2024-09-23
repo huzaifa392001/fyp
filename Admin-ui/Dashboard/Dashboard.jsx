@@ -4,8 +4,8 @@ import './Dashboard.scss'
 import SectionHeading from '@/components/SectionHeading/SectionHeading'
 import { ActiveUserChart } from '../Charts/ActiveUserChart'
 import Tables from '../Tables/Tables'
-import customerTableData from '../../Data/AdminCustomerData.json'
-import riderTableData from '../../Data/AdminRiderData.json'
+import customerTableData from '@/Data/AdminCustomerData.json'
+import riderTableData from '@/Data/AdminRiderData.json'
 
 const totalUsersData = [
   { month: "January", deliveryPartners: 12000, customers: 10500 },

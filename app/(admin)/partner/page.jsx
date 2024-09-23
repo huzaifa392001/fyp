@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionHeading from '@/components/SectionHeading/SectionHeading'
 import Tables from '@/Admin-ui/Tables/Tables'
-import riderTableData from '../../../Data/AdminRiderData.json'
+import riderTableData from '@/Data/AdminRiderData.json'
 
 function page() {
     return (
