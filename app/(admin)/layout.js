@@ -1,6 +1,7 @@
 import AdminWrapper from "@/components/AdminWrapper/AdminWrapper";
 import Fonts from "@/components/Fonts/Fonts"; // Ensure the path is correct
 import '../globals.scss'
+import './Admin.scss'
 
 export const metadata = {
   title: "Parcel Pro Connect",

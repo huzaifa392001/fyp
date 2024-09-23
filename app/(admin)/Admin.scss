@@ -1,0 +1,18 @@
+.dashboardWrapper {
+    .headingCont {
+        @apply mb-8;
+    }
+
+    .chartRow {
+        @apply grid grid-cols-3 gap-6;
+    }
+
+    .tableCont {
+        @apply min-w-[767px] overflow-x-auto mt-6 w-full;
+
+        h3 {
+            @apply text-[1.5rem] text-[var(--black)] dark:text-[var(--white)] font-bold mb-2;
+        }
+    }
+
+}

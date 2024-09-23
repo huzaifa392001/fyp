@@ -7,13 +7,13 @@ function Sidebar() {
     <aside>
       <ul>
         <li>
-          <Link href={'#'}><i className="fas fa-home"></i> Dashboard</Link>
+          <Link href={'/admin'}><i className="fas fa-home"></i> Dashboard</Link>
         </li>
         <li>
-          <Link href={'#'}><i className="far fa-users"></i> Customers</Link>
+          <Link href={'/customer'}><i className="far fa-users"></i> Customers</Link>
         </li>
         <li>
-          <Link href={'#'}><i className="fal fa-biking"></i> Delivery Partners</Link>
+          <Link href={'/partner'}><i className="fal fa-biking"></i> Delivery Partners</Link>
         </li>
         <li>
           <Link href={'#'}><i className="fas fa-badge-dollar"></i> Deals</Link>

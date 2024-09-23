@@ -3,6 +3,10 @@ import TotalUserChart from '../Charts/TotalUserChart'
 import './Dashboard.scss'
 import SectionHeading from '@/components/SectionHeading/SectionHeading'
 import { ActiveUserChart } from '../Charts/ActiveUserChart'
+import Tables from '../Tables/Tables'
+import customerTableData from '../../Data/AdminCustomerData.json'
+import riderTableData from '../../Data/AdminRiderData.json'
+
 const totalUsersData = [
   { month: "January", deliveryPartners: 12000, customers: 10500 },
   { month: "February", deliveryPartners: 13500, customers: 11500 },
@@ -40,13 +44,23 @@ function Dashboard() {
 
   return (
     <>
-      <div className="headingCont">
-        <SectionHeading heading={"Dashboard"} />
-      </div>
       <div className="dashboardWrapper">
-        <TotalUserChart chartData={totalUsersData} />
-        <ActiveUserChart chartData={totalCustomers} title={"customers"} heading={"Total Customers"} />
-        <ActiveUserChart chartData={totalPartners} title={"partners"} heading={"Total Deliver Partners"} />
+        <div className="headingCont">
+          <SectionHeading heading={"Dashboard"} />
+        </div>
+        <div className="chartRow">
+          <TotalUserChart chartData={totalUsersData} />
+          <ActiveUserChart chartData={totalCustomers} title={"customers"} heading={"Total Active Customers"} />
+          <ActiveUserChart chartData={totalPartners} title={"partners"} heading={"Total Active Deliver Partners"} />
+        </div>
+        <div className="tableCont">
+          <h3>Recent Customers</h3>
+          <Tables tableData={customerTableData} />
+        </div>
+        <div className="tableCont">
+          <h3>Recent Delivery Partners</h3>
+          <Tables tableData={riderTableData} />
+        </div>
       </div>
     </>
   )
