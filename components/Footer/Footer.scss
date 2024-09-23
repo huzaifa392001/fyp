@@ -1,0 +1,85 @@
+footer {
+    @apply bg-[var(--theme-color)] pt-16;
+
+    .grid {
+        @apply md:grid-cols-3 gap-y-4 -mx-3;
+
+        >* {
+            @apply px-3;
+        }
+    }
+
+    .footerContent {
+        .logo {
+            @apply flex items-center justify-center md:justify-start;
+        }
+
+        p {
+            @apply text-[var(--white)] text-[1.125rem] mt-6 text-start;
+        }
+    }
+
+    .links {
+        h3 {
+            @apply text-[var(--white)] text-[1.5rem] font-semibold md:mb-6 mb-3;
+        }
+
+        ul {
+            @apply flex items-start flex-col gap-4 columns-2;
+
+            li {
+                a {
+                    @apply text-[var(--white)] font-normal capitalize transition-all relative pb-1;
+                    transition-duration: 0.3s;
+                }
+            }
+
+            &:not(.contactInfo) {
+                @apply grid grid-cols-2;
+
+                li {
+                    a {
+                        &::before {
+                            content: "";
+                            @apply absolute left-0 bottom-0 w-full bg-[var(--dark-theme-color)] h-0.5 scale-x-0 origin-left transition-all;
+                            transition-duration: 0.3s;
+                        }
+
+                        &:hover {
+                            &::before {
+                                @apply scale-x-100;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.socialLinks {
+                @apply flex flex-row items-center gap-2;
+
+                li {
+                    a {
+                        @apply bg-[var(--dark-theme-color)] w-[40px] h-[40px] flex items-center justify-center rounded-md text-[1.125rem] text-[var(--white)] transition-all;
+                        transition-duration: 0.3s;
+
+                        &:hover {
+                            @apply bg-[var(--secondary-color)];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @apply border-t-2 border-[var(--white)] py-4 mt-12;
+
+        .copyrightCont {
+            @apply flex items-center justify-center;
+
+            p {
+                @apply text-center text-[var(--white)] text-[1rem] font-bold;
+            }
+        }
+    }
+}

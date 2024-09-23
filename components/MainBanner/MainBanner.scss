@@ -1,0 +1,31 @@
+.mainBanner {
+  @apply relative xl:pb-16 lg:pb-28 flex items-center justify-center border-b-2 border-[var(--theme-color)] pt-[120px];
+
+  .bannerRow {
+    @apply flex items-center gap-5 flex-col md:flex-row;
+  }
+
+  .content {
+    @apply container mx-auto flex-auto md:flex-[45%] text-center md:text-left;
+
+    h1 {
+      @apply text-[var(--black)] xl:text-[3rem] text-[2.25rem] font-black dark:text-[var(--white)];
+    }
+
+    p {
+      @apply text-[var(--text-color)] text-[1.125rem] font-normal lg:mt-12 leading-loose;
+    }
+
+    a {
+      @apply mt-2 md:mx-0 mx-auto;
+    }
+  }
+
+  figure {
+    @apply md:flex-[55%];
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+}

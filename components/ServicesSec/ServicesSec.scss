@@ -1,0 +1,88 @@
+.serviceSec {
+    .headingCont {
+        @apply mb-12;
+    }
+
+    .cardRow {
+        @apply grid grid-cols-9 place-items-center gap-4 gap-y-12;
+
+        .cardCol {
+            @apply sm:col-span-3 col-span-9 w-11/12 mx-auto sm:w-auto;
+
+            .serviceCard {
+                @apply rounded-lg overflow-clip text-center py-4 md:py-8 md:px-12 w-full;
+                box-shadow: 0 0 15px #0005;
+
+                &:where(.dark, .dark *) {
+                    box-shadow: 0 0 15px #fff7;
+                }
+
+                h4 {
+                    @apply text-[1.25rem] font-bold text-[var(--black)] dark:text-[var(--white)];
+                }
+
+                figure {
+                    @apply h-[150px] w-full flex items-center justify-center my-3;
+
+                    img {
+                        @apply h-full w-[150px] object-contain;
+                    }
+                }
+
+                p {
+                    @apply text-[15px] leading-relaxed w-3/4 mx-auto;
+                }
+
+                a {
+                    @apply font-bold text-[14px] mt-4 block text-[var(--black)] uppercase dark:text-[var(--white)];
+                }
+            }
+        }
+    }
+}
+
+.aboutUsSec {
+    .aboutRow {
+        @apply flex items-center justify-between gap-4 sm:flex-row flex-col;
+
+        &+.aboutRow {
+            @apply mt-20;
+        }
+    }
+
+    figure {
+        @include respond-to($breakpoint-lg) {
+            flex: 0 1 100%;
+        }
+
+        flex: 0 1 55%;
+    }
+
+    .content {
+        @include respond-to($breakpoint-lg) {
+            flex: 0 1 100%;
+        }
+
+        flex: 0 1 45%;
+
+        h2 {
+            @apply text-[1.75rem] xl:text-[2.25rem] text-[var(--black)] font-bold relative inline-block dark:text-[var(--white)];
+
+            span {
+                @apply font-black text-[var(--theme-color)] text-[1rem] block;
+            }
+        }
+
+        p {
+            @apply text-[var(--text-color)] xl:text-[1.125rem] font-normal xl:leading-loose;
+        }
+
+        a {
+            @apply mt-4;
+        }
+    }
+
+    .btnCont {
+        @apply flex items-center gap-4 mt-12;
+    }
+}

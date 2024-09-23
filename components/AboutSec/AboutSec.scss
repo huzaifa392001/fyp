@@ -1,0 +1,41 @@
+.aboutUsSec {
+    .aboutRow {
+        @apply flex items-center justify-between gap-4 sm:flex-row flex-col;
+
+        &+.aboutRow {
+            @apply mt-20;
+        }
+    }
+
+    figure {
+        @include respond-to($breakpoint-lg) {
+            flex: 0 1 100%;
+        }
+
+        flex: 0 1 55%;
+    }
+
+    .content {
+        @include respond-to($breakpoint-lg) {
+            flex: 0 1 100%;
+        }
+
+        flex: 0 1 45%;
+
+        h2 {
+            @apply text-[1.75rem] xl:text-[2.25rem] text-[var(--black)] font-bold relative inline-block dark:text-[var(--white)];
+
+            span {
+                @apply font-black text-[var(--theme-color)] text-[1rem] block;
+            }
+        }
+
+        p {
+            @apply text-[var(--text-color)] xl:text-[1.125rem] font-normal xl:leading-loose;
+        }
+
+        a {
+            @apply mt-4;
+        }
+    }
+}

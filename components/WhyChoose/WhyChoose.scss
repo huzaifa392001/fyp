@@ -1,0 +1,41 @@
+.chooseSec {
+    .container {
+        .cont {
+            @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+
+            .imgCont {
+                @apply w-full md:h-full relative md:block hidden;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            .contentCont {
+                h2 {
+                    @apply text-[var(--theme-color)] text-[1.125rem] font-black uppercase;
+                }
+
+                .content {
+                    @apply mt-12;
+
+                    &:first-of-type {
+                        @apply mt-8;
+                    }
+
+                    h3 {
+                        @apply text-[var(--black)] text-[1.75rem] mb-4 mt-0 leading-4 font-medium dark:text-[var(--white)];
+                    }
+
+                    p {
+                        @apply text-[var(--text-color)] m-0 font-normal;
+                    }
+                }
+
+                .btnCont {
+                    @apply flex items-center gap-4 mt-12;
+                }
+            }
+        }
+    }
+}
