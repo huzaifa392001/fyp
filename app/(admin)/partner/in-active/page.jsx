@@ -4,13 +4,16 @@ import Tables from '@/Admin-ui/Tables/Tables'
 import riderTableData from '@/Data/AdminRiderData.json'
 
 function page() {
+    // Filter the rider data to only include those with status 1
+    const filteredRiderData = riderTableData.filter(rider => rider.status === 1);
+
     return (
         <div className="dashboardWrapper">
             <div className="headingCont">
-                <SectionHeading heading={"All Delivery Partners"} />
+                <SectionHeading heading={"In-Active Delivery Partners"} />
             </div>
             <div className="tableCont">
-                <Tables tableData={riderTableData} rows={16} />
+                <Tables tableData={filteredRiderData} rows={16} />
             </div>
         </div>
     )

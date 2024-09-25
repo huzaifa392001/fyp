@@ -1,8 +1,16 @@
+'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import './Sidebar.scss'
 
 function Sidebar() {
+
+  const [dropdownActive, setDropdownActive] = useState(false)
+
+  const toggleDropdown = (status) => {
+    setDropdownActive(status)
+  }
+
   return (
     <aside>
       <ul>
@@ -12,8 +20,29 @@ function Sidebar() {
         <li>
           <Link href={'/customer'}><i className="far fa-users"></i> Customers</Link>
         </li>
-        <li>
-          <Link href={'/partner'}><i className="fal fa-biking"></i> Delivery Partners</Link>
+        <li className={`dropdown ${dropdownActive ? 'active' : ''}`}>
+          <Link href="#" onClick={(e) => { e.preventDefault(); toggleDropdown(!dropdownActive); }}>
+            <i className="fal fa-biking"></i> Delivery Partners
+          </Link>
+          {dropdownActive && (
+            <ul>
+              <li>
+                <Link href='/partner'>All Partners</Link>
+              </li>
+              <li>
+                <Link href='/partner/active'>Active Partners</Link>
+              </li>
+              <li>
+                <Link href='/partner/in-active'>In-Active Partners</Link>
+              </li>
+              <li>
+                <Link href='/partner/rejected'>Rejected</Link>
+              </li>
+              <li>
+                <Link href='/partner/pending'>Pending Request</Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
           <Link href={'#'}><i className="fas fa-badge-dollar"></i> Deals</Link>

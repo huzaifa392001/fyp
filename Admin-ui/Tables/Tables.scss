@@ -13,6 +13,19 @@
         }
     }
 
+    tbody {
+        td {
+            span {
+                @apply text-red-600 font-semibold;
+
+                &.active {
+                    @apply text-[var(--theme-color)];
+                }
+            }
+        }
+    }
+
+
     th,
     td {
         @apply py-3;

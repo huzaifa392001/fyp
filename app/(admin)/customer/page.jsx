@@ -10,7 +10,7 @@ function page() {
         <SectionHeading heading={"Customers"} />
       </div>
       <div className="tableCont">
-        <Tables tableData={customerTableData} rows={16} />
+        <Tables tableData={customerTableData} rows={16} customer={true} />
       </div>
     </div>
   )

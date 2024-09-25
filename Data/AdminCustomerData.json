@@ -3,120 +3,160 @@
         "s_no": 1,
         "name": "John Doe",
         "email": "john.doe@example.com",
-        "added_on": "2024-08-01"
+        "added_on": "2024-08-01",
+        "phone_number": "+1-555-0101",
+        "cash_paid": 500
     },
     {
         "s_no": 2,
         "name": "Jane Smith",
         "email": "jane.smith@example.com",
-        "added_on": "2024-08-02"
+        "added_on": "2024-08-02",
+        "phone_number": "+1-555-0102",
+        "cash_paid": 650
     },
     {
         "s_no": 3,
         "name": "David Johnson",
         "email": "david.johnson@example.com",
-        "added_on": "2024-08-03"
+        "added_on": "2024-08-03",
+        "phone_number": "+1-555-0103",
+        "cash_paid": 800
     },
     {
         "s_no": 4,
         "name": "Emily Davis",
         "email": "emily.davis@example.com",
-        "added_on": "2024-08-04"
+        "added_on": "2024-08-04",
+        "phone_number": "+1-555-0104",
+        "cash_paid": 450
     },
     {
         "s_no": 5,
         "name": "Michael Brown",
         "email": "michael.brown@example.com",
-        "added_on": "2024-08-05"
+        "added_on": "2024-08-05",
+        "phone_number": "+1-555-0105",
+        "cash_paid": 700
     },
     {
         "s_no": 6,
         "name": "Sarah Wilson",
         "email": "sarah.wilson@example.com",
-        "added_on": "2024-08-06"
+        "added_on": "2024-08-06",
+        "phone_number": "+1-555-0106",
+        "cash_paid": 550
     },
     {
         "s_no": 7,
         "name": "Daniel Miller",
         "email": "daniel.miller@example.com",
-        "added_on": "2024-08-07"
+        "added_on": "2024-08-07",
+        "phone_number": "+1-555-0107",
+        "cash_paid": 900
     },
     {
         "s_no": 8,
         "name": "Laura Moore",
         "email": "laura.moore@example.com",
-        "added_on": "2024-08-08"
+        "added_on": "2024-08-08",
+        "phone_number": "+1-555-0108",
+        "cash_paid": 620
     },
     {
         "s_no": 9,
         "name": "James Taylor",
         "email": "james.taylor@example.com",
-        "added_on": "2024-08-09"
+        "added_on": "2024-08-09",
+        "phone_number": "+1-555-0109",
+        "cash_paid": 400
     },
     {
         "s_no": 10,
         "name": "Olivia Anderson",
         "email": "olivia.anderson@example.com",
-        "added_on": "2024-08-10"
+        "added_on": "2024-08-10",
+        "phone_number": "+1-555-0110",
+        "cash_paid": 780
     },
     {
         "s_no": 11,
         "name": "William Thomas",
         "email": "william.thomas@example.com",
-        "added_on": "2024-08-11"
+        "added_on": "2024-08-11",
+        "phone_number": "+1-555-0111",
+        "cash_paid": 650
     },
     {
         "s_no": 12,
         "name": "Sophia Jackson",
         "email": "sophia.jackson@example.com",
-        "added_on": "2024-08-12"
+        "added_on": "2024-08-12",
+        "phone_number": "+1-555-0112",
+        "cash_paid": 590
     },
     {
         "s_no": 13,
         "name": "Henry White",
         "email": "henry.white@example.com",
-        "added_on": "2024-08-13"
+        "added_on": "2024-08-13",
+        "phone_number": "+1-555-0113",
+        "cash_paid": 720
     },
     {
         "s_no": 14,
         "name": "Grace Harris",
         "email": "grace.harris@example.com",
-        "added_on": "2024-08-14"
+        "added_on": "2024-08-14",
+        "phone_number": "+1-555-0114",
+        "cash_paid": 680
     },
     {
         "s_no": 15,
         "name": "Jack Lewis",
         "email": "jack.lewis@example.com",
-        "added_on": "2024-08-15"
+        "added_on": "2024-08-15",
+        "phone_number": "+1-555-0115",
+        "cash_paid": 810
     },
     {
         "s_no": 16,
         "name": "Charlotte Walker",
         "email": "charlotte.walker@example.com",
-        "added_on": "2024-08-16"
+        "added_on": "2024-08-16",
+        "phone_number": "+1-555-0116",
+        "cash_paid": 610
     },
     {
         "s_no": 17,
         "name": "Samuel Hall",
         "email": "samuel.hall@example.com",
-        "added_on": "2024-08-17"
+        "added_on": "2024-08-17",
+        "phone_number": "+1-555-0117",
+        "cash_paid": 830
     },
     {
         "s_no": 18,
         "name": "Mia Allen",
         "email": "mia.allen@example.com",
-        "added_on": "2024-08-18"
+        "added_on": "2024-08-18",
+        "phone_number": "+1-555-0118",
+        "cash_paid": 760
     },
     {
         "s_no": 19,
         "name": "Alexander Young",
         "email": "alexander.young@example.com",
-        "added_on": "2024-08-19"
+        "added_on": "2024-08-19",
+        "phone_number": "+1-555-0119",
+        "cash_paid": 670
     },
     {
         "s_no": 20,
         "name": "Ava King",
         "email": "ava.king@example.com",
-        "added_on": "2024-08-20"
+        "added_on": "2024-08-20",
+        "phone_number": "+1-555-0120",
+        "cash_paid": 800
     }
 ]

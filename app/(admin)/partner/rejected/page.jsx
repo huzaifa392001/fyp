@@ -7,10 +7,10 @@ function page() {
     return (
         <div className="dashboardWrapper">
             <div className="headingCont">
-                <SectionHeading heading={"All Delivery Partners"} />
+                <SectionHeading heading={"Rejected Delivery Partners"} />
             </div>
             <div className="tableCont">
-                <Tables tableData={riderTableData} rows={16} />
+                <Tables tableData={riderTableData} rows={16} rejected={true} />
             </div>
         </div>
     )

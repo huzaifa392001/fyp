@@ -3,120 +3,220 @@
         "s_no": 1,
         "name": "Chris Lee",
         "email": "chris.lee@example.com",
-        "added_on": "2024-08-01"
+        "added_on": "2024-08-01",
+        "status": 1,
+        "cash_received": 5000,
+        "cash_deposited": 2000,
+        "deposit_due": 3000,
+        "last_deposit_date": "2024-08-10"
     },
     {
         "s_no": 2,
         "name": "Brian Scott",
         "email": "brian.scott@example.com",
-        "added_on": "2024-08-02"
+        "added_on": "2024-08-02",
+        "status": 1,
+        "cash_received": 6000,
+        "cash_deposited": 3000,
+        "deposit_due": 3000,
+        "last_deposit_date": "2024-08-12"
     },
     {
         "s_no": 3,
         "name": "Linda Clark",
         "email": "linda.clark@example.com",
-        "added_on": "2024-08-03"
+        "added_on": "2024-08-03",
+        "status": 0,
+        "cash_received": 4000,
+        "cash_deposited": 2000,
+        "deposit_due": 2000,
+        "last_deposit_date": "2024-08-15"
     },
     {
         "s_no": 4,
         "name": "Mark Rodriguez",
         "email": "mark.rodriguez@example.com",
-        "added_on": "2024-08-04"
+        "added_on": "2024-08-04",
+        "status": 1,
+        "cash_received": 7000,
+        "cash_deposited": 5000,
+        "deposit_due": 2000,
+        "last_deposit_date": "2024-08-13"
     },
     {
         "s_no": 5,
         "name": "Nancy Martinez",
         "email": "nancy.martinez@example.com",
-        "added_on": "2024-08-05"
+        "added_on": "2024-08-05",
+        "status": 0,
+        "cash_received": 3000,
+        "cash_deposited": 3000,
+        "deposit_due": 0,
+        "last_deposit_date": "2024-08-10"
     },
     {
         "s_no": 6,
         "name": "George Hernandez",
         "email": "george.hernandez@example.com",
-        "added_on": "2024-08-06"
+        "added_on": "2024-08-06",
+        "status": 1,
+        "cash_received": 4500,
+        "cash_deposited": 2000,
+        "deposit_due": 2500,
+        "last_deposit_date": "2024-08-11"
     },
     {
         "s_no": 7,
         "name": "Karen Lopez",
         "email": "karen.lopez@example.com",
-        "added_on": "2024-08-07"
+        "added_on": "2024-08-07",
+        "status": 0,
+        "cash_received": 5200,
+        "cash_deposited": 3500,
+        "deposit_due": 1700,
+        "last_deposit_date": "2024-08-15"
     },
     {
         "s_no": 8,
         "name": "Steven Gonzalez",
         "email": "steven.gonzalez@example.com",
-        "added_on": "2024-08-08"
+        "added_on": "2024-08-08",
+        "status": 1,
+        "cash_received": 8100,
+        "cash_deposited": 4000,
+        "deposit_due": 4100,
+        "last_deposit_date": "2024-08-17"
     },
     {
         "s_no": 9,
         "name": "Jessica Perez",
         "email": "jessica.perez@example.com",
-        "added_on": "2024-08-09"
+        "added_on": "2024-08-09",
+        "status": 0,
+        "cash_received": 3000,
+        "cash_deposited": 1500,
+        "deposit_due": 1500,
+        "last_deposit_date": "2024-08-14"
     },
     {
         "s_no": 10,
         "name": "Adam Sanchez",
         "email": "adam.sanchez@example.com",
-        "added_on": "2024-08-10"
+        "added_on": "2024-08-10",
+        "status": 1,
+        "cash_received": 9000,
+        "cash_deposited": 6000,
+        "deposit_due": 3000,
+        "last_deposit_date": "2024-08-16"
     },
     {
         "s_no": 11,
         "name": "Anna Ramirez",
         "email": "anna.ramirez@example.com",
-        "added_on": "2024-08-11"
+        "added_on": "2024-08-11",
+        "status": 1,
+        "cash_received": 6700,
+        "cash_deposited": 3000,
+        "deposit_due": 3700,
+        "last_deposit_date": "2024-08-18"
     },
     {
         "s_no": 12,
         "name": "Eric Evans",
         "email": "eric.evans@example.com",
-        "added_on": "2024-08-12"
+        "added_on": "2024-08-12",
+        "status": 0,
+        "cash_received": 5600,
+        "cash_deposited": 5600,
+        "deposit_due": 0,
+        "last_deposit_date": "2024-08-19"
     },
     {
         "s_no": 13,
         "name": "Rachel Thomas",
         "email": "rachel.thomas@example.com",
-        "added_on": "2024-08-13"
+        "added_on": "2024-08-13",
+        "status": 1,
+        "cash_received": 4800,
+        "cash_deposited": 2000,
+        "deposit_due": 2800,
+        "last_deposit_date": "2024-08-18"
     },
     {
         "s_no": 14,
         "name": "Tom Baker",
         "email": "tom.baker@example.com",
-        "added_on": "2024-08-14"
+        "added_on": "2024-08-14",
+        "status": 1,
+        "cash_received": 7200,
+        "cash_deposited": 5000,
+        "deposit_due": 2200,
+        "last_deposit_date": "2024-08-20"
     },
     {
         "s_no": 15,
         "name": "Megan Carter",
         "email": "megan.carter@example.com",
-        "added_on": "2024-08-15"
+        "added_on": "2024-08-15",
+        "status": 0,
+        "cash_received": 5300,
+        "cash_deposited": 2000,
+        "deposit_due": 3300,
+        "last_deposit_date": "2024-08-21"
     },
     {
         "s_no": 16,
         "name": "Peter Nelson",
         "email": "peter.nelson@example.com",
-        "added_on": "2024-08-16"
+        "added_on": "2024-08-16",
+        "status": 1,
+        "cash_received": 6100,
+        "cash_deposited": 4000,
+        "deposit_due": 2100,
+        "last_deposit_date": "2024-08-22"
     },
     {
         "s_no": 17,
         "name": "Ashley Hill",
         "email": "ashley.hill@example.com",
-        "added_on": "2024-08-17"
+        "added_on": "2024-08-17",
+        "status": 0,
+        "cash_received": 8500,
+        "cash_deposited": 5000,
+        "deposit_due": 3500,
+        "last_deposit_date": "2024-08-23"
     },
     {
         "s_no": 18,
         "name": "Edward Wright",
         "email": "edward.wright@example.com",
-        "added_on": "2024-08-18"
+        "added_on": "2024-08-18",
+        "status": 1,
+        "cash_received": 4600,
+        "cash_deposited": 4600,
+        "deposit_due": 0,
+        "last_deposit_date": "2024-08-24"
     },
     {
         "s_no": 19,
         "name": "Natalie Green",
         "email": "natalie.green@example.com",
-        "added_on": "2024-08-19"
+        "added_on": "2024-08-19",
+        "status": 0,
+        "cash_received": 3900,
+        "cash_deposited": 3900,
+        "deposit_due": 0,
+        "last_deposit_date": "2024-08-25"
     },
     {
         "s_no": 20,
         "name": "Charles Lewis",
         "email": "charles.lewis@example.com",
-        "added_on": "2024-08-20"
+        "added_on": "2024-08-20",
+        "status": 1,
+        "cash_received": 7300,
+        "cash_deposited": 5000,
+        "deposit_due": 2300,
+        "last_deposit_date": "2024-08-26"
     }
 ]

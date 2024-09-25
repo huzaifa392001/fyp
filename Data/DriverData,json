@@ -1,0 +1,73 @@
+{
+    "driver_id": 101,
+    "name": "Ali Khan",
+    "email": "ali.khan@example.com",
+    "phone_number": "+92-300-1234567",
+    "status": 0,
+    "cash_received": 25000,
+    "last_deposit": 15000,
+    "last_deposit_date": "2024-09-20",
+    "total_deliveries": 120,
+    "average_rating": 4.8,
+    "vehicle": {
+        "vehicle_id": 501,
+        "type": "Motorbike",
+        "model": "Honda CG 125",
+        "license_plate": "ABC-1234",
+        "color": "Black"
+    },
+    "current_location": {
+        "latitude": 33.6844,
+        "longitude": 73.0479
+    },
+    "active_delivery": {
+        "delivery_id": 201,
+        "customer_name": "Zainab Ali",
+        "delivery_address": "123 Main St, Karachi",
+        "status": "In Progress",
+        "cash_due": 5000,
+        "expected_delivery_time": "2024-09-25T15:00:00Z"
+    },
+    "completed_deliveries": [
+        {
+            "delivery_id": 202,
+            "customer_name": "Bilal Ahmed",
+            "delivery_address": "456 Elm St, Karachi",
+            "status": "Completed",
+            "cash_received": 3000,
+            "delivery_date": "2024-09-24"
+        },
+        {
+            "delivery_id": 203,
+            "customer_name": "Sarah Khan",
+            "delivery_address": "789 Pine St, Karachi",
+            "status": "Completed",
+            "cash_received": 4000,
+            "delivery_date": "2024-09-23"
+        },
+        {
+            "delivery_id": 204,
+            "customer_name": "Farah Malik",
+            "delivery_address": "321 Oak St, Karachi",
+            "status": "Completed",
+            "cash_received": 3500,
+            "delivery_date": "2024-09-22"
+        },
+        {
+            "delivery_id": 205,
+            "customer_name": "Imran Raza",
+            "delivery_address": "654 Maple St, Karachi",
+            "status": "Completed",
+            "cash_received": 4500,
+            "delivery_date": "2024-09-21"
+        },
+        {
+            "delivery_id": 206,
+            "customer_name": "Fatima Noor",
+            "delivery_address": "987 Cherry St, Karachi",
+            "status": "Completed",
+            "cash_received": 2500,
+            "delivery_date": "2024-09-20"
+        }
+    ]
+}

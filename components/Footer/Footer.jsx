@@ -9,14 +9,14 @@ function Footer() {
             <div className="container mx-auto">
                 <div className="grid ">
                     <div className="footerContent">
-                        <figure className="logo">
+                        <Link href='/' className="logo">
                             <Image
                                 src={'/images/logo-white.png'}
                                 width={250}
                                 height={80}
                                 alt='Footer Logo'
                             />
-                        </figure>
+                        </Link>
                         <p>
                             ParcelPro is a dynamic and innovative platform designed to revolutionize the way deliveries are managed and executed.
                         </p>
@@ -28,13 +28,13 @@ function Footer() {
                                 <Link href='/about'>About Us</Link>
                             </li>
                             <li>
-                                <Link href=''>Franchise</Link>
-                            </li>
-                            <li>
-                                <Link href=''>Partner</Link>
+                                <Link href=''>Services</Link>
                             </li>
                             <li>
                                 <Link href=''>FAQs</Link>
+                            </li>
+                            <li>
+                                <Link href=''>Contact Us</Link>
                             </li>
                             <li>
                                 <Link href=''>Blogs</Link>

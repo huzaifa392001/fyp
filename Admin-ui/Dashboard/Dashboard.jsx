@@ -55,7 +55,7 @@ function Dashboard() {
         </div>
         <div className="tableCont">
           <h3>Recent Customers</h3>
-          <Tables tableData={customerTableData} />
+          <Tables tableData={customerTableData} customer={true} />
         </div>
         <div className="tableCont">
           <h3>Recent Delivery Partners</h3>
