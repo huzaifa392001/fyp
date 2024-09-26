@@ -72,7 +72,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  Delivery partners are paid based on the jobs they complete. Additionally, there’s a weekly cash deposit system where delivery partners deposit collected cash from customers into the company’s account.
+                  Delivery partners are paid based on the jobs they complete. Additionally, there's a weekly cash deposit system where delivery partners deposit collected cash from customers into the company's account.
                 </p>
               </div>
             </div>
