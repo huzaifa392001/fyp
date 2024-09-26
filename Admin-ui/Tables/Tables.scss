@@ -15,6 +15,10 @@
 
     tbody {
         td {
+            a {
+                @apply text-[var(--dark-theme-color)] dark:text-[var(--theme-color)] font-semibold animate-pulse;
+            }
+
             span {
                 @apply text-red-600 font-semibold;
 

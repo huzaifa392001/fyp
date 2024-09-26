@@ -1,0 +1,115 @@
+.infoCont {
+    @apply flex items-center gap-x-5 w-full pr-16;
+
+    figure {
+        @apply h-[200px] w-[200px] rounded-full border-4 border-[var(--theme-color)] overflow-hidden relative;
+
+        img {
+            @apply object-cover;
+        }
+    }
+
+    .info {
+        h3 {
+            @apply font-bold text-[var(--black)] dark:text-[var(--theme-color)] text-[2rem];
+        }
+    }
+
+    .status {
+        @apply flex items-center ml-auto gap-x-2;
+
+        h2 {
+            @apply text-[var(--black)] dark:text-[var(--white)] text-[3.5rem] font-bold;
+        }
+
+        span {
+            @apply w-4 h-4 rounded-full bg-red-500;
+
+            animation: blink 400ms ease alternate infinite;
+
+            &.active {
+                @apply bg-green-500;
+            }
+
+            @keyframes blink {
+                from {
+                    opacity: 0.5;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.seperator {
+    @apply my-8 border-t border-[var(--theme-color)];
+}
+
+.heading {
+    @apply font-semibold text-[var(--black)] dark:text-[var(--white)] mb-3 text-[1.5rem] capitalize;
+}
+
+.orderTable {
+    @apply border-collapse border;
+
+    * {
+        @apply border-[#0004] dark:border-[#fff4];
+    }
+
+    thead {
+        @apply bg-[var(--dark-theme-color)] text-[var(--white)];
+
+        th {
+            @apply text-[var(--white)];
+        }
+    }
+
+    tbody {
+        td {
+            span {
+                @apply text-red-600 font-semibold;
+
+                &.active {
+                    @apply text-[var(--theme-color)];
+                }
+            }
+        }
+    }
+
+
+    th,
+    td {
+        @apply py-3;
+    }
+
+    &.borderTable {
+
+        td,
+        th {
+            @apply w-2/4;
+
+            &+td {
+                @apply border-l;
+            }
+
+            &:last-child {
+                @apply text-end;
+            }
+        }
+    }
+}
+
+.chartCont {
+    @apply grid grid-cols-2 gap-x-8;
+}
+
+.balanceCont {
+    @apply flex flex-col gap-3;
+
+    h4 {
+        @apply text-[1.125rem] font-medium;
+    }
+}

@@ -23,6 +23,7 @@
     "active_delivery": {
         "delivery_id": 201,
         "customer_name": "Zainab Ali",
+        "pickup_address": "Warehouse 10, Industrial Area, Karachi",
         "delivery_address": "123 Main St, Karachi",
         "status": "In Progress",
         "cash_due": 5000,
@@ -32,6 +33,7 @@
         {
             "delivery_id": 202,
             "customer_name": "Bilal Ahmed",
+            "pickup_address": "Warehouse 5, Industrial Area, Karachi",
             "delivery_address": "456 Elm St, Karachi",
             "status": "Completed",
             "cash_received": 3000,
@@ -40,6 +42,7 @@
         {
             "delivery_id": 203,
             "customer_name": "Sarah Khan",
+            "pickup_address": "Warehouse 7, Industrial Area, Karachi",
             "delivery_address": "789 Pine St, Karachi",
             "status": "Completed",
             "cash_received": 4000,
@@ -48,6 +51,7 @@
         {
             "delivery_id": 204,
             "customer_name": "Farah Malik",
+            "pickup_address": "Warehouse 3, Industrial Area, Karachi",
             "delivery_address": "321 Oak St, Karachi",
             "status": "Completed",
             "cash_received": 3500,
@@ -56,6 +60,7 @@
         {
             "delivery_id": 205,
             "customer_name": "Imran Raza",
+            "pickup_address": "Warehouse 8, Industrial Area, Karachi",
             "delivery_address": "654 Maple St, Karachi",
             "status": "Completed",
             "cash_received": 4500,
@@ -64,10 +69,43 @@
         {
             "delivery_id": 206,
             "customer_name": "Fatima Noor",
+            "pickup_address": "Warehouse 6, Industrial Area, Karachi",
             "delivery_address": "987 Cherry St, Karachi",
             "status": "Completed",
             "cash_received": 2500,
             "delivery_date": "2024-09-20"
+        }
+    ],
+    "earnings": [
+        {
+            "month": "April",
+            "earning": 12000,
+            "company_payment": 10000
+        },
+        {
+            "month": "May",
+            "earning": 15000,
+            "company_payment": 12000
+        },
+        {
+            "month": "June",
+            "earning": 18000,
+            "company_payment": 14000
+        },
+        {
+            "month": "July",
+            "earning": 14000,
+            "company_payment": 12000
+        },
+        {
+            "month": "August",
+            "earning": 16000,
+            "company_payment": 13000
+        },
+        {
+            "month": "September",
+            "earning": 17500,
+            "company_payment": 15000
         }
     ]
 }

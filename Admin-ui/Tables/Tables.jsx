@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/table";
 import ReactPaginate from 'react-paginate';
 import './Tables.scss';
+import Link from 'next/link';
 
 function Tables({ tableData, rows = 10, customer, pending, rejected }) {
     const [currentPage, setCurrentPage] = useState(0);
@@ -51,7 +52,13 @@ function Tables({ tableData, rows = 10, customer, pending, rejected }) {
                     {currentRows.map((tableRow, index) => (
                         <TableRow key={index}>
                             <TableCell>{offset + index + 1}</TableCell>
-                            <TableCell>{tableRow?.name || 'Name Not Available'}</TableCell>
+                            <TableCell>
+                                {customer ? (
+                                    tableRow?.name || 'Name Not Available'
+                                ) :
+                                    <Link href={'/partner/123'}>{tableRow?.name || 'Name Not Available'}</Link>
+                                }
+                            </TableCell>
                             <TableCell>{tableRow?.email || 'Email Not Available'}</TableCell>
                             <TableCell>{tableRow?.phone_number || 'Phone Number Not Available'}</TableCell>
                             {!customer && !pending && !rejected && renderStatusCell(tableRow?.status)}
