@@ -12,7 +12,7 @@ function page() {
           <div className="headingCont">
             <SectionHeading heading={"Frequently Asked Questions (FAQ)"} />
             <p>
-              Welcome to the ParcelProConnect FAQ page! Here, you'll find answers to common questions about our platform, how it works, and how you can get started as a business, individual, or delivery partner. Whether you're looking to send parcels, partner with us as a driver, or understand how our fees work, this page has got you covered. If you need further assistance, don't hesitate to contact our support team.
+              {"Welcome to the ParcelProConnect FAQ page! Here, you'll find answers to common questions about our platform, how it works, and how you can get started as a business, individual, or delivery partner. Whether you're looking to send parcels, partner with us as a driver, or understand how our fees work, this page has got you covered. If you need further assistance, don't hesitate to contact our support team."}
             </p>
           </div>
           <div className="faqCont">
@@ -24,7 +24,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  ParcelProConnect is a platform that connects businesses and individuals with delivery drivers for parcel delivery services. It facilitates Vendor to Customer, Person to Person, and Business to Business deliveries.
+                  {"ParcelProConnect is a platform that connects businesses and individuals with delivery drivers for parcel delivery services. It facilitates Vendor to Customer, Person to Person, and Business to Business deliveries."}
                 </p>
               </div>
             </div>
@@ -36,7 +36,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  You can register as a delivery partner by submitting your details through the app. Your information will be reviewed and approved by a company or the superadmin before you can start taking delivery jobs.
+                  {"You can register as a delivery partner by submitting your details through the app. Your information will be reviewed and approved by a company or the superadmin before you can start taking delivery jobs."}
                 </p>
               </div>
             </div>
@@ -48,7 +48,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  Yes, once a company is verified, it can register multiple delivery partners through the ParcelProConnect platform.
+                  {"Yes, once a company is verified, it can register multiple delivery partners through the ParcelProConnect platform."}
                 </p>
               </div>
             </div>
@@ -60,7 +60,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  ParcelProConnect supports Vendor to Customer, Person to Person, and Business to Business deliveries, catering to a variety of delivery needs.
+                  {"ParcelProConnect supports Vendor to Customer, Person to Person, and Business to Business deliveries, catering to a variety of delivery needs."}
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  Delivery partners are paid based on the jobs they complete. Additionally, there's a weekly cash deposit system where delivery partners deposit collected cash from customers into the company's account.
+                  {"Delivery partners are paid based on the jobs they complete. Additionally, there's a weekly cash deposit system where delivery partners deposit collected cash from customers into the company's account."}
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  Businesses pay a monthly registration fee to use the platform. Delivery partners are charged a 5% fee on each order they fulfill.
+                  {"Businesses pay a monthly registration fee to use the platform. Delivery partners are charged a 5% fee on each order they fulfill."}
                 </p>
               </div>
             </div>
@@ -96,7 +96,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  If you encounter any problems with a delivery, you can contact ParcelProConnect support through the app for assistance. Issues like delayed or incomplete deliveries will be addressed promptly.
+                  {"If you encounter any problems with a delivery, you can contact ParcelProConnect support through the app for assistance. Issues like delayed or incomplete deliveries will be addressed promptly."}
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  All deliveries are tracked in real-time through the ParcelProConnect app, providing updates on pickup and delivery statuses.
+                  {"All deliveries are tracked in real-time through the ParcelProConnect app, providing updates on pickup and delivery statuses."}
                 </p>
               </div>
             </div>
@@ -120,7 +120,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  Yes, individuals can use ParcelProConnect to send parcels to other people through the Person to Person delivery option.
+                  {"Yes, individuals can use ParcelProConnect to send parcels to other people through the Person to Person delivery option."}
                 </p>
               </div>
             </div>
@@ -132,7 +132,7 @@ function page() {
               </div>
               <div className="descriptionBox">
                 <p>
-                  Companies must submit their details for approval by the superadmin. Once verified, they can register delivery partners and start using the platform.
+                  {"Companies must submit their details for approval by the superadmin. Once verified, they can register delivery partners and start using the platform."}
                 </p>
               </div>
             </div>
