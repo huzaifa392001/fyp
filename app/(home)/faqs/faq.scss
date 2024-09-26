@@ -1,0 +1,25 @@
+.faqSec {
+    .container {
+        @apply mx-auto;
+    }
+
+    .faqCont {
+        @apply grid md:grid-cols-2 gap-6 mt-12;
+
+        .faqBox {
+            @apply border border-[#0004] dark:border-[#fff4] rounded-xl overflow-hidden;
+
+            .headingBox {
+                @apply px-5 border-b border-[#0004] dark:border-[#fff4] bg-[#0004] dark:bg-[#fff4] py-3 text-[var(--black)] dark:text-[var(--white)];
+
+                h3 {
+                    @apply m-0 text-[1.125rem] font-semibold;
+                }
+            }
+
+            .descriptionBox {
+                @apply px-5 py-3;
+            }
+        }
+    }
+}
