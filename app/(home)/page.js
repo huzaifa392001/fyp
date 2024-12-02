@@ -33,7 +33,7 @@ export default function Home() {
         </div>
       </section>
       {/* <AboutBanner /> */}
-      <section className="serviceSec">
+      {/* <section className="serviceSec">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {hireData.map((data, index) => (
@@ -46,7 +46,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <ContactUsSec />
       {/* <TestiSec data={TestimonialData} /> */}
     </>

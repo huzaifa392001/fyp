@@ -3,10 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import './AdminHeader.scss'
+import { store } from '@/Redux/Store'
+import { SET_LOGOUT } from '@/Redux/Slices/Admin'
+import { usePathname, useRouter } from 'next/navigation'
 
 function AdminHeader() {
     const [isActive, setIsActive] = useState(false)
     const [ActiveBtn, SetActiveBtn] = useState(false);
+    const router = useRouter()
 
     // Function to toggle theme
     const toggleTheme = () => {
@@ -31,6 +35,12 @@ function AdminHeader() {
             SetActiveBtn(false);
         }
     }, []);
+
+    const handleLogout = () => {
+        store.dispatch(SET_LOGOUT())
+        router.push('/admin')
+    }
+
     return (
         <header>
             <figure className="logo">
@@ -58,8 +68,11 @@ function AdminHeader() {
                         <li>
                             <Link href={'#'}>Settings</Link>
                         </li>
+                        <li>
+                            <Link href={'/'}>Back to Website</Link>
+                        </li>
                         <li className='logout'>
-                            <Link href={'#'}>Logout</Link>
+                            <button onClick={handleLogout} >Logout</button>
                         </li>
                     </ul>
                 </div>

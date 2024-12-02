@@ -56,18 +56,20 @@ header {
             }
 
             li {
-                a {
-                    @apply text-[1.125rem] px-3 py-2 block text-[var(--black)] dark:text-[var(--white)] transition-all;
+                a,
+                button {
+                    @apply w-full text-left text-[1.125rem] px-3 py-2 block text-[var(--black)] dark:text-[var(--white)] transition-all;
 
                     &:hover {
                         @apply bg-[#0002] dark:bg-[#fff2];
                     }
                 }
 
-                &.logout{
+                &.logout {
                     @apply bg-[#ca0b00];
-                    a{
-                        @apply text-[var(--white)]
+                    a,
+                    button {
+                        @apply text-[var(--white)];
                     }
                 }
             }
