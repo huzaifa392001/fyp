@@ -1,10 +1,10 @@
 footer {
-    @apply bg-[var(--theme-color)] pt-16;
+    @apply bg-[var(--theme-color)] pt-16 dark:bg-[var(--background)];
 
     .grid {
         @apply md:grid-cols-3 gap-y-4 -mx-3;
 
-        >* {
+        > * {
             @apply px-3;
         }
     }

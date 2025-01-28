@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import serviceData from '../../Data/ServiceCardData.json'
+import serviceData from '@/Data/ServiceCardData.json'
 import './ServicesSec.scss'
 import SectionHeading from '../SectionHeading/SectionHeading'
 
