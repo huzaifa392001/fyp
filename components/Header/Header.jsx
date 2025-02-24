@@ -70,9 +70,9 @@ function Header() {
                                     <span className="ball" />
                                 </button>
                             </li>
-                            <li className='linkBtn'>
+                            {/* <li className='linkBtn'>
                                 <Link href='/admin'>Get Started</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <button onClick={toggleTheme} className={ActiveBtn ? 'switchBtn active' : 'switchBtn'}>
@@ -83,7 +83,7 @@ function Header() {
                     </button>
                 </nav>
             </header>
-            <div className={`${headerActive ? 'active ' : ''}mobileMenu navbar`}>
+            <div className={`${headerActive ? 'active ' : ''} mobileMenu navbar`}>
                 <ul>
                     <li>
                         <Link onClick={() => setHeaderActive(!headerActive)} href='/'>Home</Link>
